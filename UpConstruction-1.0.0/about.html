@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Giới thiệu - Phế Liệu Thành Phát</title>
+  <meta content="Tìm hiểu về Phế Liệu Thành Phát - đơn vị thu mua phế liệu giá cao tận nơi, quy trình minh bạch, cân chuẩn và thanh toán nhanh cho khách hàng cá nhân, nhà xưởng và doanh nghiệp." name="description">
+  <meta content="giới thiệu phế liệu thành phát, thu mua phế liệu tận nơi, cân điện tử phế liệu, thu mua sắt đồng nhôm inox" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --scrap-green: #1f5f43;
+      --scrap-green-dark: #123c2a;
+      --scrap-green-soft: #e9f5ef;
+      --scrap-orange: #f39c12;
+      --scrap-orange-soft: #fff2de;
+      --scrap-slate: #20343f;
+      --scrap-text: #52636c;
+      --scrap-border: rgba(31, 95, 67, 0.12);
+      --scrap-shadow: 0 18px 40px rgba(18, 60, 42, 0.08);
+    }
+
+    body {
+      color: var(--scrap-text);
+    }
+
+    .header .logo h1,
+    .footer-info h3,
+    .section-header h2,
+    .about-hero-card h2,
+    .commitment-card h4,
+    .member-card h4,
+    .timeline-card h4,
+    .testimonial-card h4,
+    .cta-box h3 {
+      color: var(--scrap-slate);
+    }
+
+    .header .logo h1 span,
+    .section-header h2::after,
+    .story-list i,
+    .commitment-card i,
+    .timeline-badge,
+    .stats-value,
+    .contact-mini i,
+    .social-links a:hover {
+      color: var(--scrap-orange);
+    }
+
+    .breadcrumbs {
+      min-height: 340px;
+      position: relative;
+      background:
+        linear-gradient(135deg, rgba(18, 60, 42, 0.92), rgba(31, 95, 67, 0.86)),
+        radial-gradient(circle at top right, rgba(243, 156, 18, 0.18), transparent 32%);
+    }
+
+    .breadcrumbs:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 36px 36px;
+      opacity: .45;
+    }
+
+    .breadcrumbs .container {
+      z-index: 2;
+    }
+
+    .breadcrumbs h2,
+    .breadcrumbs p,
+    .breadcrumbs ol,
+    .breadcrumbs ol a {
+      color: #fff;
+    }
+
+    .breadcrumbs p {
+      max-width: 760px;
+      margin: 14px auto 0;
+      line-height: 1.7;
+    }
+
+    .page-intro {
+      padding: 80px 0 50px;
+    }
+
+    .about-hero-card,
+    .visual-card,
+    .commitment-card,
+    .timeline-card,
+    .member-card,
+    .testimonial-card,
+    .cta-box,
+    .contact-mini {
+      background: #fff;
+      border: 1px solid var(--scrap-border);
+      border-radius: 22px;
+      box-shadow: var(--scrap-shadow);
+    }
+
+    .about-hero-card {
+      padding: 34px;
+      height: 100%;
+    }
+
+    .about-hero-card .badge-title,
+    .mini-label,
+    .timeline-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--scrap-orange-soft);
+      color: var(--scrap-orange);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .about-hero-card h2 {
+      font-size: 40px;
+      line-height: 1.2;
+      margin: 18px 0;
+    }
+
+    .about-hero-card p {
+      margin-bottom: 18px;
+      line-height: 1.8;
+    }
+
+    .story-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+    }
+
+    .story-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .story-list i {
+      font-size: 18px;
+      margin-top: 3px;
+    }
+
+    .quick-numbers {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .quick-number {
+      background: var(--scrap-green-soft);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .quick-number strong {
+      display: block;
+      color: var(--scrap-green-dark);
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+
+    .visual-card {
+      padding: 24px;
+      overflow: hidden;
+      height: 100%;
+      background: linear-gradient(180deg, #f9fcfa, #edf7f1);
+    }
+
+    .visual-caption {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .visual-caption .caption-box {
+      background: #fff;
+      border-radius: 18px;
+      padding: 16px;
+      border: 1px solid rgba(31, 95, 67, 0.08);
+    }
+
+    .stats-counter {
+      padding: 30px 0 80px;
+      background: #f7faf8;
+    }
+
+    .stats-item {
+      background: #fff;
+      border-radius: 20px;
+      padding: 24px;
+      border: 1px solid var(--scrap-border);
+      box-shadow: var(--scrap-shadow);
+    }
+
+    .stats-item i {
+      color: var(--scrap-green);
+      font-size: 34px;
+      margin-right: 18px;
+    }
+
+    .stats-value {
+      display: block;
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .section-header p {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .commitments,
+    .process-section,
+    .team-section,
+    .testimonials,
+    .contact-strip {
+      padding: 80px 0;
+    }
+
+    .commitment-card,
+    .timeline-card,
+    .member-card,
+    .testimonial-card,
+    .contact-mini {
+      padding: 28px;
+      height: 100%;
+    }
+
+    .commitment-card i,
+    .contact-mini i {
+      font-size: 30px;
+      margin-bottom: 18px;
+      display: inline-block;
+    }
+
+    .commitment-card p,
+    .timeline-card p,
+    .member-card p,
+    .testimonial-card p,
+    .contact-mini p {
+      margin-bottom: 0;
+      line-height: 1.75;
+    }
+
+    .timeline-card {
+      position: relative;
+      padding-top: 74px;
+    }
+
+    .timeline-badge {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      background: var(--scrap-green-soft);
+      color: var(--scrap-green-dark);
+    }
+
+    .member-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--scrap-green), #3c8a68);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 28px;
+      margin-bottom: 18px;
+      box-shadow: 0 14px 24px rgba(31, 95, 67, 0.2);
+    }
+
+    .member-role {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--scrap-orange);
+      font-weight: 700;
+    }
+
+    .member-meta {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px dashed rgba(31, 95, 67, 0.15);
+      font-size: 14px;
+      color: #70828c;
+    }
+
+    .testimonial-card {
+      background: linear-gradient(180deg, #ffffff, #f7faf8);
+    }
+
+    .stars {
+      color: #f4b63d;
+      margin-bottom: 14px;
+    }
+
+    .testimonial-person {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testimonial-person .avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--scrap-orange-soft);
+      color: var(--scrap-orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+    }
+
+    .cta-box {
+      padding: 38px;
+      background: linear-gradient(135deg, rgba(18, 60, 42, 0.98), rgba(31, 95, 67, 0.96));
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cta-box:before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      right: -40px;
+      top: -40px;
+      background: rgba(243, 156, 18, 0.14);
+      border-radius: 50%;
+    }
+
+    .cta-box h3,
+    .cta-box p,
+    .cta-box .btn-get-started,
+    .cta-box .btn-outline-light {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-box h3 {
+      color: #fff;
+      font-size: 34px;
+      margin-bottom: 14px;
+    }
+
+    .cta-box p {
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.8;
+      margin-bottom: 26px;
+    }
+
+    .btn-get-started {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 24px;
+      border-radius: 999px;
+      background: var(--scrap-orange);
+      color: #fff;
+      font-weight: 700;
+      transition: .3s;
+    }
+
+    .btn-get-started:hover {
+      background: #de8c08;
+      color: #fff;
+    }
+
+    .contact-strip {
+      background: #f7faf8;
+    }
+
+    .contact-mini strong {
+      display: block;
+      color: var(--scrap-slate);
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .footer {
+      background: linear-gradient(180deg, #163126, #10241d);
+    }
+
+    .footer a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 991px) {
+      .about-hero-card h2 {
+        font-size: 32px;
+      }
+
+      .page-intro,
+      .commitments,
+      .process-section,
+      .team-section,
+      .testimonials,
+      .contact-strip {
+        padding: 60px 0;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .quick-numbers,
+      .visual-caption {
+        grid-template-columns: 1fr;
+      }
+
+      .about-hero-card,
+      .visual-card,
+      .commitment-card,
+      .timeline-card,
+      .member-card,
+      .testimonial-card,
+      .cta-box,
+      .contact-mini {
+        border-radius: 18px;
+      }
+
+      .cta-box h3 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Phế Liệu Thành Phát<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html" class="active">Giới thiệu</a></li>
+          <li><a href="services.html">Dịch vụ</a></li>
+          <li><a href="projects.html">Mặt hàng</a></li>
+          <li><a href="blog.html">Tin tức</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="breadcrumbs d-flex align-items-center">
+      <div class="container position-relative d-flex flex-column align-items-center text-center" data-aos="fade">
+        <h2>Giới thiệu về Phế Liệu Thành Phát</h2>
+        <p>Chúng tôi phát triển từ đội thu gom dân dụng thành đơn vị thu mua phế liệu chuyên nghiệp, phục vụ nhà dân, cửa hàng, công trình, kho xưởng và doanh nghiệp với quy trình khảo sát nhanh, báo giá rõ ràng, cân chuẩn và thanh toán ngay.</p>
+        <ol>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li>Giới thiệu</li>
+        </ol>
+      </div>
+    </div>
+
+    <section class="page-intro">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="about-hero-card">
+              <span class="badge-title"><i class="bi bi-recycle"></i> Đơn vị thu mua phế liệu tận nơi</span>
+              <h2>Thu mua minh bạch, giá cạnh tranh, xử lý gọn cho mọi nguồn hàng phế liệu</h2>
+              <p>Phế Liệu Thành Phát tập trung vào thu mua các nhóm hàng có giá trị tái chế cao như sắt thép, đồng, nhôm, inox, chì, dây cáp điện, bo mạch, máy móc cũ, nhựa công nghiệp, giấy carton và hàng thanh lý kho xưởng.</p>
+              <p>Chúng tôi xây dựng dịch vụ dựa trên 3 yếu tố cốt lõi: phản hồi nhanh, cân đúng thực tế và thanh toán ngay sau khi chốt khối lượng. Điều này giúp khách hàng tiết kiệm thời gian, giải phóng mặt bằng nhanh và kiểm soát tốt chi phí thu hồi.</p>
+              <ul class="story-list">
+                <li><i class="bi bi-check-circle-fill"></i><span>Nhận thu mua từ số lượng nhỏ tại hộ gia đình đến lô hàng lớn tại nhà máy.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span>Có xe tải, đội bốc xếp, công cụ cắt tháo và cân điện tử đi cùng.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span>Linh hoạt làm việc ngoài giờ, cuối tuần, xử lý nhanh các ca cần dọn kho gấp.</span></li>
+              </ul>
+
+              <div class="quick-numbers">
+                <div class="quick-number">
+                  <strong>8+ năm</strong>
+                  <span>Kinh nghiệm thu gom và phân loại phế liệu</span>
+                </div>
+                <div class="quick-number">
+                  <strong>24/7</strong>
+                  <span>Tiếp nhận báo giá và điều phối xe tận nơi</span>
+                </div>
+                <div class="quick-number">
+                  <strong>1000+</strong>
+                  <span>Khách hàng dân dụng, cửa hàng và xưởng sản xuất</span>
+                </div>
+                <div class="quick-number">
+                  <strong>3 tỉnh</strong>
+                  <span>Phục vụ thường xuyên tại TP.HCM, Bình Dương, Đồng Nai</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="visual-card">
+              <span class="mini-label"><i class="bi bi-truck"></i> Vận hành trực tiếp không qua trung gian</span>
+              <svg viewBox="0 0 620 430" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minh họa quy trình thu mua phế liệu">
+                <defs>
+                  <linearGradient id="truckGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#1f5f43" />
+                    <stop offset="100%" stop-color="#3e8f6d" />
+                  </linearGradient>
+                  <linearGradient id="metalGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#f39c12" />
+                    <stop offset="100%" stop-color="#ffd27d" />
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="620" height="430" rx="30" fill="#edf7f1" />
+                <circle cx="102" cy="95" r="44" fill="#fff2de" />
+                <circle cx="540" cy="94" r="58" fill="#dceddf" />
+                <rect x="76" y="302" width="470" height="18" rx="9" fill="#c6d7ce" />
+                <rect x="148" y="188" width="190" height="88" rx="16" fill="url(#truckGradient)" />
+                <rect x="335" y="205" width="112" height="71" rx="14" fill="#285c46" />
+                <rect x="357" y="219" width="48" height="28" rx="8" fill="#d7efe1" />
+                <rect x="178" y="160" width="122" height="32" rx="16" fill="#f0f7f3" />
+                <circle cx="205" cy="286" r="30" fill="#20343f" />
+                <circle cx="205" cy="286" r="14" fill="#d9e6de" />
+                <circle cx="405" cy="286" r="30" fill="#20343f" />
+                <circle cx="405" cy="286" r="14" fill="#d9e6de" />
+                <rect x="64" y="244" width="88" height="16" rx="8" fill="#f39c12" />
+                <rect x="84" y="206" width="28" height="40" rx="10" fill="#f6c15d" />
+                <path d="M98 206 L98 128" stroke="#f39c12" stroke-width="10" stroke-linecap="round" />
+                <rect x="74" y="112" width="48" height="24" rx="10" fill="url(#metalGradient)" />
+                <path d="M98 134 Q156 172 214 134" stroke="#f39c12" stroke-width="8" fill="none" stroke-linecap="round" />
+                <rect x="214" y="132" width="20" height="20" rx="6" fill="#9cb3a8" />
+                <rect x="240" y="122" width="28" height="30" rx="6" fill="#8ba59a" />
+                <rect x="274" y="128" width="18" height="24" rx="4" fill="#a6bbb1" />
+                <rect x="472" y="214" width="62" height="48" rx="12" fill="#ffffff" />
+                <path d="M486 245 h32" stroke="#1f5f43" stroke-width="8" stroke-linecap="round" />
+                <path d="M502 229 v32" stroke="#1f5f43" stroke-width="8" stroke-linecap="round" />
+                <rect x="454" y="178" width="26" height="70" rx="10" fill="#9db3a8" />
+                <path d="M468 178 C492 156 520 154 544 178" stroke="#9db3a8" stroke-width="10" fill="none" stroke-linecap="round" />
+              </svg>
+
+              <div class="visual-caption">
+                <div class="caption-box">
+                  <strong>Báo giá nhanh</strong>
+                  <p>Khảo sát bằng hình ảnh hoặc đến tận nơi trong ngày.</p>
+                </div>
+                <div class="caption-box">
+                  <strong>Thu gom trọn gói</strong>
+                  <p>Có nhân lực tháo dỡ, phân loại và vận chuyển an toàn.</p>
+                </div>
+                <div class="caption-box">
+                  <strong>Cân thực tế</strong>
+                  <p>Sử dụng cân điện tử và đối chiếu rõ khối lượng từng nhóm hàng.</p>
+                </div>
+                <div class="caption-box">
+                  <strong>Thanh toán ngay</strong>
+                  <p>Tiền mặt hoặc chuyển khoản ngay sau khi hoàn tất thu mua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-building"></i>
+              <div>
+                <span class="stats-value">350+</span>
+                <p>Kho xưởng và doanh nghiệp đã phục vụ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-truck-flatbed"></i>
+              <div>
+                <span class="stats-value">1200+</span>
+                <p>Chuyến xe thu gom thành công mỗi năm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-recycle"></i>
+              <div>
+                <span class="stats-value">5000+</span>
+                <p>Tấn vật liệu tái chế được thu hồi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-cash-coin"></i>
+              <div>
+                <span class="stats-value">15 phút</span>
+                <p>Thời gian xử lý thanh toán sau khi cân hàng</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="commitments">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Cam kết dịch vụ</h2>
+          <p>Thay vì chỉ thu gom đơn thuần, chúng tôi xây dựng một quy trình làm việc rõ ràng để khách hàng yên tâm về giá, khối lượng và tiến độ xử lý hàng hóa.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="commitment-card">
+              <i class="bi bi-clipboard2-check"></i>
+              <h4>Báo giá minh bạch</h4>
+              <p>Phân loại rõ từng nhóm hàng: sắt, đồng, nhôm, inox, nhựa, giấy, máy móc cũ để khách dễ đối chiếu và quyết định.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="commitment-card">
+              <i class="bi bi-speedometer2"></i>
+              <h4>Phản hồi nhanh</h4>
+              <p>Nhận thông tin qua điện thoại, Zalo hoặc hình ảnh và lên phương án thu gom phù hợp trong thời gian ngắn.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="commitment-card">
+              <i class="bi bi-shield-check"></i>
+              <h4>Làm việc an toàn</h4>
+              <p>Đội ngũ có kinh nghiệm tháo dỡ hàng cồng kềnh, máy móc, khung kèo và vật tư kim loại tại công trình hoặc nhà xưởng.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="commitment-card">
+              <i class="bi bi-wallet2"></i>
+              <h4>Thanh toán dứt điểm</h4>
+              <p>Sau khi hoàn tất cân và thống kê, khách hàng được thanh toán ngay, không kéo dài thời gian đối soát.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Quy trình làm việc</h2>
+          <p>Quy trình 4 bước giúp khách hàng từ lúc gửi thông tin đến lúc hoàn tất thu mua đều được xử lý nhanh, gọn và kiểm soát rõ ràng.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="timeline-card">
+              <span class="timeline-badge">Bước 1</span>
+              <h4>Tiếp nhận thông tin</h4>
+              <p>Khách gửi hình ảnh, video hoặc mô tả loại hàng, khối lượng, vị trí và thời gian mong muốn thu gom.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="timeline-card">
+              <span class="timeline-badge">Bước 2</span>
+              <h4>Khảo sát & báo giá</h4>
+              <p>Đội ngũ kiểm tra thực tế hoặc định giá sơ bộ từ xa, sau đó chốt phương án thu mua và điều phối xe phù hợp.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="timeline-card">
+              <span class="timeline-badge">Bước 3</span>
+              <h4>Thu gom & cân hàng</h4>
+              <p>Thực hiện tháo dỡ, bốc xếp, phân loại, cân đo rõ ràng ngay tại điểm thu mua để đảm bảo minh bạch khối lượng.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="timeline-card">
+              <span class="timeline-badge">Bước 4</span>
+              <h4>Thanh toán & bàn giao</h4>
+              <p>Khách nhận thanh toán ngay và khu vực thu gom được bàn giao gọn gàng, hỗ trợ dọn sạch hiện trường nếu cần.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Đội ngũ vận hành</h2>
+          <p>Chúng tôi tổ chức đội ngũ theo năng lực thực tế để xử lý tốt cả đơn hàng dân dụng lẫn các lô hàng công nghiệp có yêu cầu tháo dỡ và vận chuyển nhanh.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="member-card">
+              <div class="member-avatar">TP</div>
+              <span class="member-role">Điều phối hiện trường</span>
+              <h4>Nguyễn Thành Phúc</h4>
+              <p>Phụ trách khảo sát thực tế, lên phương án xe tải, nhân lực bốc xếp và xử lý các lô hàng thu gom tại kho xưởng.</p>
+              <div class="member-meta">Kinh nghiệm: 9 năm • Chuyên xử lý hàng cồng kềnh, máy móc cũ</div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member-card">
+              <div class="member-avatar">HL</div>
+              <span class="member-role">Phân loại & định giá</span>
+              <h4>Trần Hoài Linh</h4>
+              <p>Chuyên đánh giá tỷ lệ kim loại, phân loại nhóm vật tư tái chế và hỗ trợ chốt giá phù hợp theo thị trường từng thời điểm.</p>
+              <div class="member-meta">Kinh nghiệm: 7 năm • Am hiểu đồng, nhôm, inox, cáp điện</div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member-card">
+              <div class="member-avatar">QM</div>
+              <span class="member-role">Tài chính & đối soát</span>
+              <h4>Lê Quốc Minh</h4>
+              <p>Kiểm soát chứng từ, tổng hợp khối lượng và thanh toán nhanh cho khách hàng cá nhân, cửa hàng và doanh nghiệp.</p>
+              <div class="member-meta">Kinh nghiệm: 6 năm • Thanh toán tiền mặt hoặc chuyển khoản linh hoạt</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Khách hàng nhận xét</h2>
+          <p>Phản hồi thực tế từ khách hàng từng sử dụng dịch vụ thu mua phế liệu tận nơi của Phế Liệu Thành Phát.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>Kho tôi có lượng lớn sắt, kệ cũ và máy hỏng cần giải phóng gấp. Đội đến đúng hẹn, tháo dỡ gọn và cân hàng rất rõ ràng. Giá tốt hơn bên trung gian trước đó.</p>
+              <div class="testimonial-person">
+                <div class="avatar">AT</div>
+                <div>
+                  <h4>Anh Tuấn</h4>
+                  <span>Quản lý kho linh kiện, Bình Dương</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>Tôi thanh lý xưởng may nên có nhiều inox, bàn sắt và dây điện. Thành Phát báo giá nhanh qua Zalo, hôm sau có xe tới gom hết và chuyển khoản ngay sau khi cân.</p>
+              <div class="testimonial-person">
+                <div class="avatar">CH</div>
+                <div>
+                  <h4>Chị Hạnh</h4>
+                  <span>Chủ xưởng may, Thủ Đức</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>Điểm tôi thích là bên này làm việc chuyên nghiệp, có đủ người bốc xếp và không để mặt bằng bừa bộn sau khi thu mua. Phù hợp cho doanh nghiệp cần xử lý hàng tồn kho.</p>
+              <div class="testimonial-person">
+                <div class="avatar">DN</div>
+                <div>
+                  <h4>Doanh nghiệp Nam Việt</h4>
+                  <span>Đơn vị cơ khí, Đồng Nai</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-strip">
+      <div class="container" data-aos="fade-up">
+        <div class="cta-box">
+          <div class="row gy-4 align-items-center">
+            <div class="col-lg-8">
+              <h3>Cần khảo sát và báo giá phế liệu trong ngày?</h3>
+              <p>Gửi hình ảnh qua Zalo hoặc gọi trực tiếp để chúng tôi tư vấn nhóm hàng, khối lượng ước tính, thời gian điều xe và phương án thu gom phù hợp nhất cho bạn.</p>
+              <a href="contact.html" class="btn-get-started"><i class="bi bi-telephone-fill"></i> Liên hệ báo giá</a>
+            </div>
+            <div class="col-lg-4">
+              <div class="row gy-3">
+                <div class="col-12">
+                  <div class="contact-mini">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <strong>Khu vực phục vụ</strong>
+                    <p>TP.HCM, Bình Dương, Đồng Nai và các khu vực lân cận khi có số lượng hàng phù hợp.</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="contact-mini">
+                    <i class="bi bi-clock-history"></i>
+                    <strong>Thời gian tiếp nhận</strong>
+                    <p>Hỗ trợ 24/7 qua hotline, linh hoạt lịch thu gom sáng sớm, buổi tối hoặc cuối tuần.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Phế Liệu Thành Phát</h3>
+              <p>
+                Thu mua phế liệu giá cao tận nơi<br>
+                Phục vụ nhanh tại TP.HCM, Bình Dương, Đồng Nai<br><br>
+                <strong>Hotline:</strong> 0909 686 889<br>
+                <strong>Email:</strong> info@phelieuthanhphat.vn<br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-tiktok"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-telephone"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Điều hướng</h4>
+            <ul>
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="about.html">Giới thiệu</a></li>
+              <li><a href="services.html">Dịch vụ</a></li>
+              <li><a href="projects.html">Mặt hàng</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Nhóm phế liệu</h4>
+            <ul>
+              <li><a href="projects.html">Sắt thép phế liệu</a></li>
+              <li><a href="projects.html">Đồng đỏ - đồng cáp</a></li>
+              <li><a href="projects.html">Nhôm, inox, chì</a></li>
+              <li><a href="projects.html">Nhựa công nghiệp</a></li>
+              <li><a href="projects.html">Giấy carton, giấy vụn</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Hỗ trợ khách hàng</h4>
+            <ul>
+              <li><a href="services.html">Khảo sát tận nơi</a></li>
+              <li><a href="services.html">Tháo dỡ máy móc</a></li>
+              <li><a href="services.html">Thu gom kho xưởng</a></li>
+              <li><a href="contact.html">Báo giá nhanh</a></li>
+              <li><a href="blog.html">Kinh nghiệm phân loại</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Thông tin</h4>
+            <ul>
+              <li><a href="about.html">Năng lực vận hành</a></li>
+              <li><a href="about.html">Cam kết dịch vụ</a></li>
+              <li><a href="projects.html">Mặt hàng thu mua</a></li>
+              <li><a href="blog.html">Tin thị trường</a></li>
+              <li><a href="contact.html">Kết nối ngay</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          © Bản quyền <strong><span>Phế Liệu Thành Phát</span></strong>. Giao diện đã được chuyển đổi sang chủ đề thu mua phế liệu.
+        </div>
+        <div class="credits">
+          Thiết kế nền tảng từ mẫu Bootstrap, nội dung đã được tùy biến theo thương hiệu thu mua phế liệu.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
