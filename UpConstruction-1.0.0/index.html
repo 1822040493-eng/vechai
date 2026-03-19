@@ -6,15 +6,20 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Phế Liệu Hoàng Doanh - Thu mua phế liệu giá cao tận nơi</title>
-  <meta content="Phế Liệu Hoàng Doanh chuyên thu mua phế liệu giá cao tận nơi tại TP.HCM, Bình Dương, Đồng Nai. Nhận thu mua sắt, đồng, nhôm, inox, giấy carton, nhựa và máy móc cũ." name="description">
-  <meta content="thu mua phế liệu, phế liệu giá cao, thu mua sắt vụn, thu mua đồng, thu mua nhôm, thu mua inox" name="keywords">
+  <meta
+    content="Phế Liệu Hoàng Doanh chuyên thu mua phế liệu giá cao tận nơi tại TP.HCM, Bình Dương, Đồng Nai. Nhận thu mua sắt, đồng, nhôm, inox, giấy carton, nhựa và máy móc cũ."
+    name="description">
+  <meta content="thu mua phế liệu, phế liệu giá cao, thu mua sắt vụn, thu mua đồng, thu mua nhôm, thu mua inox"
+    name="keywords">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -27,11 +32,11 @@
 
   <style>
     :root {
-      --scrap-green: #1f5f43;
-      --scrap-green-dark: #123c2a;
-      --scrap-green-soft: #e9f5ef;
-      --scrap-orange: #f39c12;
-      --scrap-orange-soft: #fff2de;
+      --scrap-green: #15803d;
+      --scrap-green-dark: #166534;
+      --scrap-green-soft: #f0fdf4;
+      --scrap-orange: #fbbf24;
+      --scrap-orange-soft: #fef3c7;
       --scrap-slate: #20343f;
       --scrap-text: #455a64;
     }
@@ -41,75 +46,352 @@
     }
 
     .header {
-      background: rgba(16, 52, 38, 0.96) !important;
+      background: linear-gradient(90deg, rgba(24, 112, 71, 0.98), rgba(34, 136, 89, 0.96)) !important;
+      padding: 8px 0 10px;
+      box-shadow: 0 10px 24px rgba(6, 33, 23, 0.14);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .header .logo {
+      gap: 10px;
+    }
+
+    .header .logo i {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(255, 252, 226, 0.2), rgba(255, 238, 168, 0.08));
+      color: #ffcc33;
+      font-size: 19px;
+      border: 1px solid rgba(255, 230, 150, 0.18);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
     }
 
     .header .logo h1 {
       color: #fff;
-      font-size: 28px;
+      font-size: 25px;
+      margin: 0;
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -0.3px;
     }
 
     .header .logo h1 span {
-      color: var(--scrap-orange);
+      color: #ffd43b;
+    }
+
+    .header-top-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 0 0 8px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .header-top-left {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 18px;
+      flex: 1;
+    }
+
+    .header-top-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 7px 12px;
+      min-height: 42px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .header-top-item:hover {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(255, 222, 112, 0.34);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(8, 27, 19, 0.16);
+      opacity: 1;
+    }
+
+    .header-top-item i {
+      flex: 0 0 30px;
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(255, 239, 160, 0.26), rgba(255, 213, 59, 0.12));
+      color: #fff3bf;
+      font-size: 12px;
+      border: 1px solid rgba(255, 226, 122, 0.18);
+    }
+
+    .header-top-item .label {
+      display: none;
+    }
+
+    .header-top-item a,
+    .header-top-item span {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 14px;
+      line-height: 1.25;
+      white-space: nowrap;
+    }
+
+    .header-top-item a:hover {
+      color: #ffe08a;
+    }
+
+    .header-social {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      padding-left: 0;
+    }
+
+    .header-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: rgba(255, 255, 255, 0.14);
+      color: #fff;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      font-size: 13px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: none;
+    }
+
+    .header-social a:hover {
+      background: #fbbf24;
+      color: #173326;
+      border-color: #fbbf24;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 18px rgba(251, 191, 36, 0.22);
     }
 
     .navbar a,
     .navbar a:focus {
-      color: rgba(255, 255, 255, 0.82);
+      color: rgba(255, 255, 255, 0.95);
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.1px;
     }
 
     .navbar a:hover,
     .navbar .active,
     .navbar .active:focus,
     .navbar li:hover>a {
-      color: #fff;
+      color: #ffd166;
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #fff07a 0%, #ffd84d 42%, #f4b400 100%);
+      color: #173326;
+      padding: 11px 19px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease, color 0.35s ease;
+      white-space: nowrap;
+      box-shadow: 0 18px 34px rgba(244, 180, 0, 0.34), 0 0 0 5px rgba(255, 216, 77, 0.18);
+      border: 1px solid rgba(255, 240, 122, 0.88);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      animation: ctaPulse 2.4s ease-in-out infinite;
+    }
+
+    .header-cta i {
+      font-size: 15px;
+      transition: transform 0.35s ease;
+    }
+
+    .header-cta::before {
+      content: '';
+      position: absolute;
+      inset: 1px;
+      border-radius: inherit;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.08));
+      z-index: -1;
+    }
+
+    .header-cta::after {
+      content: '';
+      position: absolute;
+      top: -24%;
+      left: -38%;
+      width: 38%;
+      height: 150%;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0));
+      transform: rotate(18deg);
+      transition: left 0.6s ease;
+      pointer-events: none;
+    }
+
+    .header-cta:hover {
+      background: linear-gradient(135deg, #fff59a 0%, #ffe066 42%, #ffc107 100%);
+      color: #10281d;
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 22px 42px rgba(255, 193, 7, 0.42), 0 0 0 8px rgba(255, 224, 102, 0.22);
+    }
+
+    .header-cta:hover i {
+      transform: rotate(-8deg) scale(1.08);
+    }
+
+    .header-cta:hover::after {
+      left: 112%;
+    }
+
+    @media (max-width: 991px) {
+      .header-top-left {
+        gap: 12px 18px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-top-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .header-top-left {
+        width: 100%;
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-top-item {
+        width: 100%;
+        padding: 2px 0;
+      }
+
+      .header-social {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      .header .logo h1 {
+        font-size: 20px;
+      }
+
+      .header .logo i {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+      }
     }
 
     .hero.scrap-hero {
-      background:
-        linear-gradient(135deg, rgba(14, 46, 33, 0.96), rgba(23, 88, 62, 0.86)),
-        radial-gradient(circle at top right, rgba(243, 156, 18, 0.35), transparent 35%),
-        radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.08), transparent 30%);
-      min-height: 100vh;
-      padding: 150px 0 80px;
+      background: linear-gradient(135deg, #279868 0%, #3abc7c 35%, #31a96f 65%, #269566 100%);
+      min-height: auto;
+      padding: 60px 0 50px;
       position: relative;
       overflow: hidden;
     }
 
     .hero.scrap-hero:before {
-      display: none;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:
+        radial-gradient(circle at 15% 30%, rgba(255, 255, 255, 0.13) 0%, transparent 40%),
+        radial-gradient(circle at 85% 70%, rgba(90, 205, 140, 0.14) 0%, transparent 50%);
+      pointer-events: none;
     }
+
 
     .hero-badge {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.2);
       color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      padding: 10px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 10px 20px;
       border-radius: 999px;
-      margin-bottom: 18px;
-      font-weight: 600;
+      margin-bottom: 16px;
+      font-weight: 700;
       font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     .hero-title {
       color: #fff;
-      font-size: 52px;
-      line-height: 1.15;
-      font-weight: 800;
-      margin-bottom: 18px;
+      font-size: clamp(52px, 6vw, 72px);
+      line-height: 1.08;
+      font-weight: 900;
+      margin-bottom: 20px;
+      letter-spacing: -1.4px;
+      text-shadow: 0 8px 24px rgba(6, 41, 27, 0.2), 0 2px 6px rgba(0, 0, 0, 0.12);
+      max-width: 880px;
     }
 
     .hero-title span {
-      color: var(--scrap-orange);
+      display: inline-block;
+      margin: 8px 0 10px;
+      padding: 5px 18px 9px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(255, 248, 196, 0.12), rgba(244, 207, 58, 0.2));
+      color: #ffd84d;
+      box-shadow: 0 10px 24px rgba(255, 216, 77, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+      text-shadow: 0 0 14px rgba(255, 216, 77, 0.16);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 240, 180, 0.16);
+    }
+
+    .hero-title span::after {
+      content: '';
+      position: absolute;
+      top: -30%;
+      left: -32%;
+      width: 34%;
+      height: 170%;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+      transform: rotate(18deg);
+      animation: titleShine 4.6s ease-in-out infinite;
     }
 
     .hero-description {
-      color: rgba(255, 255, 255, 0.88);
+      color: rgba(255, 255, 255, 0.95);
       font-size: 18px;
       margin-bottom: 28px;
+      line-height: 1.7;
+      max-width: 600px;
     }
 
     .hero-actions {
@@ -125,53 +407,162 @@
       align-items: center;
       gap: 10px;
       border-radius: 999px;
-      padding: 14px 24px;
-      font-weight: 700;
-      transition: all 0.3s ease;
+      padding: 15px 34px;
+      font-weight: 800;
+      transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-btn-primary i,
+    .hero-btn-secondary i {
+      transition: transform 0.35s ease;
     }
 
     .hero-btn-primary {
-      background: var(--scrap-orange);
-      color: #fff;
+      background: linear-gradient(135deg, #fff3a6 0%, #ffd84d 35%, #f4b400 68%, #cb8f00 100%);
+      color: #173326;
+      border: 1px solid rgba(255, 239, 166, 0.95);
+      box-shadow: 0 18px 36px rgba(244, 180, 0, 0.34), 0 8px 22px rgba(85, 61, 5, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.62);
+      animation: ctaPulse 2.4s ease-in-out infinite 0.2s;
+    }
+
+    .hero-btn-primary::before,
+    .hero-btn-secondary::before {
+      content: '';
+      position: absolute;
+      inset: 1px;
+      border-radius: inherit;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.04));
+      z-index: -1;
+    }
+
+    .hero-btn-primary::after,
+    .hero-btn-secondary::after {
+      content: '';
+      position: absolute;
+      top: -28%;
+      left: -42%;
+      width: 38%;
+      height: 165%;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0));
+      transform: rotate(18deg);
+      transition: left 0.62s ease;
+      pointer-events: none;
     }
 
     .hero-btn-primary:hover {
-      background: #df8e0d;
-      color: #fff;
+      background: linear-gradient(135deg, #fff7c2 0%, #ffe16d 40%, #ffc928 72%, #dd9800 100%);
+      color: #10281d;
+      transform: translateY(-5px) scale(1.04);
+      box-shadow: 0 24px 48px rgba(255, 193, 7, 0.4), 0 12px 26px rgba(85, 61, 5, 0.2), 0 0 0 8px rgba(255, 224, 102, 0.18);
+    }
+
+    .hero-btn-primary:hover i {
+      transform: translateX(3px) scale(1.08);
+    }
+
+    .hero-btn-primary:hover::after,
+    .hero-btn-secondary:hover::after {
+      left: 112%;
     }
 
     .hero-btn-secondary {
-      border: 1px solid rgba(255, 255, 255, 0.26);
-      color: #fff;
-      background: rgba(255, 255, 255, 0.06);
+      color: #fffdf5;
+      border: 1px solid rgba(255, 223, 128, 0.42);
+      background: linear-gradient(135deg, rgba(17, 57, 39, 0.96), rgba(29, 101, 69, 0.9));
+      box-shadow: 0 16px 34px rgba(6, 41, 27, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
 
     .hero-btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.12);
-      color: #fff;
+      background: linear-gradient(135deg, #17452f, #1f6b49);
+      border-color: rgba(255, 223, 128, 0.7);
+      color: #fffef8;
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 22px 40px rgba(6, 41, 27, 0.3), 0 0 0 7px rgba(255, 216, 77, 0.09);
+    }
+
+    .hero-btn-secondary:hover i {
+      transform: translateY(2px) scale(1.08);
+    }
+
+    @keyframes ctaPulse {
+
+      0%,
+      100% {
+        box-shadow: 0 14px 30px rgba(255, 191, 31, 0.34), 0 0 0 0 rgba(255, 226, 122, 0.1);
+      }
+
+      50% {
+        box-shadow: 0 20px 40px rgba(255, 191, 31, 0.44), 0 0 0 9px rgba(255, 226, 122, 0.08);
+      }
+    }
+
+
+    @keyframes titleShine {
+      0% {
+        left: -38%;
+        opacity: 0;
+      }
+
+      15% {
+        opacity: 1;
+      }
+
+      55% {
+        left: 118%;
+        opacity: 0.95;
+      }
+
+      100% {
+        left: 118%;
+        opacity: 0;
+      }
     }
 
     .hero-highlights {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 26px;
+      gap: 16px;
+      margin-top: 28px;
     }
 
     .hero-highlights .item {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      padding: 16px;
-      border-radius: 18px;
-      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 235, 170, 0.34);
+      padding: 18px 16px;
+      border-radius: 16px;
+      color: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+      backdrop-filter: blur(12px);
+      transition: all 0.3s ease;
+    }
+
+    .hero-highlights .item:hover {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(255, 226, 122, 0.5);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.22);
     }
 
     .hero-highlights .item strong {
       display: block;
-      font-size: 26px;
-      line-height: 1;
-      color: var(--scrap-orange);
-      margin-bottom: 8px;
+      font-size: 22px;
+      line-height: 1.1;
+      color: #ffd43b;
+      margin-bottom: 6px;
+      font-weight: 900;
+    }
+
+    .hero-highlights .item {
+      font-size: 13px;
+      line-height: 1.45;
+      opacity: 0.95;
     }
 
     .hero-illustration,
@@ -179,35 +570,243 @@
     .portfolio-visual,
     .blog-visual,
     .testimonial-avatar {
-      background: linear-gradient(135deg, #0f2f22, #2b7a57);
+      background: linear-gradient(135deg, #e9f5ef, #d4e8e0);
       border-radius: 28px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 30px 60px rgba(12, 24, 18, 0.28);
+      border: 1px solid #d4e8e0;
+      box-shadow: 0 8px 24px rgba(15, 32, 24, 0.08);
     }
+
+    .hero-visual-wrap {
+      position: relative;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
 
     .hero-illustration {
-      padding: 24px;
+      position: relative;
+      min-height: 420px;
+      width: 100%;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      overflow: visible;
+      isolation: isolate;
+      z-index: 1;
     }
 
-    .floating-note {
+    .hero-illustration::before {
+      content: none;
+    }
+
+    .hero-illustration::after {
+      content: none;
+    }
+
+    .hero-illustration-shape {
       position: absolute;
-      right: 15px;
-      bottom: 20px;
-      background: #fff;
-      color: var(--scrap-slate);
-      padding: 14px 16px;
-      border-radius: 16px;
-      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
-      font-weight: 700;
-      min-width: 190px;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      overflow: visible;
     }
 
-    .floating-note span {
+    .hero-illustration-shape::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 14% 14%, rgba(255, 214, 64, 0.2) 0 2px, transparent 3px),
+        radial-gradient(circle at 94% 72%, rgba(255, 214, 64, 0.18) 0 2px, transparent 3px);
+      opacity: 0.72;
+      z-index: 1;
+    }
+
+    .hero-illustration-shape::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 5px);
+      right: 16px;
+      width: 430px;
+      height: 310px;
+      border-radius: 42px;
+      background: linear-gradient(135deg, rgba(255, 216, 77, 0.2), rgba(255, 255, 255, 0.05));
+      border: 1px solid rgba(255, 232, 156, 0.22);
+      box-shadow:
+        0 22px 46px rgba(13, 39, 29, 0.14),
+        -58px -42px 0 -22px rgba(255, 216, 77, 0.18),
+        -88px 72px 0 -34px rgba(255, 255, 255, 0.08),
+        30px 72px 0 -24px rgba(255, 216, 77, 0.12);
+      transform: translateY(-50%) rotate(-10deg);
+      z-index: 2;
+    }
+
+    .hero-illustration-shape .hero-ornament-1,
+    .hero-illustration-shape .hero-ornament-2,
+    .hero-illustration-shape .hero-ornament-3 {
+      position: absolute;
       display: block;
-      margin-top: 4px;
-      font-size: 13px;
-      color: #6c757d;
-      font-weight: 600;
+      pointer-events: none;
+      z-index: 4;
+      border-radius: 28px;
+      box-shadow: 0 18px 36px rgba(12, 17, 14, 0.12);
+    }
+
+    .hero-illustration-shape .hero-ornament-1 {
+      top: 6px;
+      right: -8px;
+      width: 170px;
+      height: 170px;
+      border-radius: 40px;
+      background: linear-gradient(135deg, rgba(255, 230, 102, 0.96), rgba(255, 205, 56, 0.78));
+      transform: rotate(18deg);
+    }
+
+    .hero-illustration-shape .hero-ornament-2 {
+      bottom: 28px;
+      right: -22px;
+      width: 196px;
+      height: 118px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 216, 77, 0.24));
+      border: 1px solid rgba(255, 239, 184, 0.24);
+      backdrop-filter: blur(4px);
+      transform: rotate(-18deg);
+    }
+
+    .hero-illustration-shape .hero-ornament-3 {
+      top: 126px;
+      left: -18px;
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.68), rgba(255, 216, 77, 0.24));
+      box-shadow: 0 12px 28px rgba(255, 216, 77, 0.16);
+    }
+
+    .hero-illustration-mask {
+      position: absolute;
+      top: calc(50% - 5px);
+      right: 8px;
+      transform: translateY(-50%);
+      width: 420px;
+      height: 420px;
+      overflow: hidden;
+      background: linear-gradient(145deg, #ffffff, #fff4c7);
+      border-radius: 50%;
+      border: 14px solid #ffd24d;
+      box-shadow: 0 30px 66px rgba(12, 17, 14, 0.24), 0 0 0 12px rgba(255, 216, 77, 0.12);
+      z-index: 3;
+    }
+
+    .hero-illustration-mask::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(255, 212, 59, 0.1), rgba(255, 212, 59, 0) 42%, rgba(255, 255, 255, 0.1) 100%);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .hero-illustration-mask::after {
+      content: none;
+    }
+
+
+    .hero-illustration .hero-banner-slider {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .hero-illustration .swiper-slide {
+      height: 420px;
+      overflow: hidden;
+    }
+
+    .hero-illustration img {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.85s ease, filter 0.85s ease;
+      filter: saturate(1.02) contrast(1.04) brightness(0.98);
+    }
+
+    .hero-visual-wrap:hover img {
+      transform: scale(1.05);
+      filter: saturate(1.08) contrast(1.08) brightness(1);
+    }
+
+
+    .hero-illustration .swiper-pagination {
+      position: absolute;
+      right: 42px;
+      bottom: 18px;
+      left: auto;
+      width: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 5;
+      padding: 10px;
+      border-radius: 18px;
+      background: rgba(18, 27, 24, 0.42);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-illustration .swiper-pagination-bullet {
+      width: 42px;
+      height: 42px;
+      margin: 0 !important;
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.08));
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      opacity: 1;
+      transition: all 0.3s ease;
+      position: relative;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
+    }
+
+    .hero-illustration .swiper-pagination-bullet::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.78);
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease;
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.06);
+    }
+
+    .hero-illustration .swiper-pagination-bullet:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.12));
+      border-color: rgba(255, 255, 255, 0.26);
+    }
+
+    .hero-illustration .swiper-pagination-bullet-active {
+      background: linear-gradient(135deg, #fff2a6, #ffd84d);
+      border-color: rgba(255, 216, 77, 0.95);
+      box-shadow: 0 10px 22px rgba(255, 193, 7, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    }
+
+    .hero-illustration .swiper-pagination-bullet-active::before {
+      width: 14px;
+      height: 14px;
+      background: #173326;
+      box-shadow: 0 0 0 5px rgba(23, 51, 38, 0.12);
     }
 
     .section-header h2 {
@@ -217,7 +816,10 @@
 
     .section-header h2:after {
       background: var(--scrap-orange);
+
     }
+
+
 
     .section-soft {
       background: linear-gradient(180deg, #fff, #f7fbf8);
@@ -268,21 +870,55 @@
 
     .service-item {
       height: 100%;
-      padding: 28px 24px;
+      padding: 32px 28px;
+      background: linear-gradient(135deg, #ffffff 0%, #f9fdfb 100%);
+      border: 1px solid rgba(21, 128, 61, 0.12);
+      box-shadow: 0 8px 24px rgba(21, 128, 61, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .service-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #fbbf24, #15803d, #0ea5e9);
+      opacity: 0.6;
+    }
+
+    .service-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(21, 128, 61, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: rgba(21, 128, 61, 0.24);
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
     }
 
     .service-item .icon,
     .mini-icon {
-      width: 70px;
-      height: 70px;
+      width: 80px;
+      height: 80px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border-radius: 18px;
-      background: var(--scrap-green-soft);
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(21, 128, 61, 0.1), rgba(15, 165, 233, 0.08));
       color: var(--scrap-green);
-      font-size: 28px;
-      margin-bottom: 18px;
+      font-size: 32px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(21, 128, 61, 0.15);
+      box-shadow: 0 4px 12px rgba(21, 128, 61, 0.1);
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .service-item:hover .icon {
+      background: linear-gradient(135deg, rgba(21, 128, 61, 0.2), rgba(15, 165, 233, 0.15));
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 8px 20px rgba(21, 128, 61, 0.2);
     }
 
     .service-item h3,
@@ -294,6 +930,26 @@
     .info-card h4 {
       color: var(--scrap-green-dark);
       font-weight: 800;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      transition: color 0.3s ease;
+    }
+
+    .service-item:hover h3 {
+      color: var(--scrap-green);
+    }
+
+    .service-item p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #64748b;
+      margin-bottom: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .service-item:hover p {
+      color: #475569;
     }
 
     .service-item .readmore,
@@ -301,12 +957,18 @@
     .portfolio-card .readmore {
       color: var(--scrap-green);
       font-weight: 700;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
 
     .service-item .readmore:hover,
     .post-item .readmore:hover,
     .portfolio-card .readmore:hover {
       color: var(--scrap-orange);
+      transform: translateX(4px);
     }
 
     .scrap-visual,
@@ -322,39 +984,156 @@
 
     .portfolio-card {
       height: 100%;
+      background: linear-gradient(135deg, #ffffff 0%, #f9fdfb 100%);
+      border: 1px solid rgba(21, 128, 61, 0.12);
+      box-shadow: 0 8px 24px rgba(21, 128, 61, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .portfolio-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #fbbf24, #15803d, #0ea5e9);
+      opacity: 0.6;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(21, 128, 61, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: rgba(21, 128, 61, 0.24);
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
     }
 
     .portfolio-card .content {
-      padding: 22px;
+      padding: 28px;
+    }
+
+    .portfolio-card h4 {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      transition: color 0.3s ease;
+    }
+
+    .portfolio-card:hover h4 {
+      color: var(--scrap-green);
+    }
+
+    .portfolio-card p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #64748b;
+      margin-bottom: 16px;
     }
 
     .process-step {
       position: relative;
-      padding: 30px 26px;
-      background: #fff;
-      border-radius: 22px;
-      border: 1px solid #edf2ee;
-      box-shadow: 0 16px 36px rgba(15, 32, 24, 0.08);
+      padding: 32px 28px;
+      background: linear-gradient(135deg, #ffffff 0%, #f9fdfb 100%);
+      border-radius: 20px;
+      border: 1px solid rgba(21, 128, 61, 0.12);
+      box-shadow: 0 8px 24px rgba(21, 128, 61, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
       height: 100%;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .process-step::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #0ea5e9, #15803d, #fbbf24);
+      opacity: 0.6;
+    }
+
+    .process-step:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(21, 128, 61, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: rgba(21, 128, 61, 0.24);
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
     }
 
     .process-step .number {
-      width: 54px;
-      height: 54px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
-      background: var(--scrap-orange-soft);
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(251, 191, 36, 0.08));
       color: var(--scrap-orange);
       font-weight: 800;
-      font-size: 22px;
+      font-size: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
+      border: 2px solid rgba(251, 191, 36, 0.3);
+      box-shadow: 0 4px 12px rgba(251, 191, 36, 0.1);
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .process-step:hover .number {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.25), rgba(251, 191, 36, 0.15));
+      transform: scale(1.12) rotate(10deg);
+      box-shadow: 0 8px 20px rgba(251, 191, 36, 0.2);
+      border-color: rgba(251, 191, 36, 0.5);
+    }
+
+    .process-step h4 {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      transition: color 0.3s ease;
+    }
+
+    .process-step:hover h4 {
+      color: var(--scrap-green);
+    }
+
+    .process-step p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #64748b;
     }
 
     .feature-box {
-      padding: 24px;
+      padding: 28px;
       height: 100%;
+      background: linear-gradient(135deg, #ffffff 0%, #f9fdfb 100%);
+      border: 1px solid rgba(21, 128, 61, 0.12);
+      box-shadow: 0 8px 24px rgba(21, 128, 61, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .feature-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #0ea5e9, #15803d, #fbbf24);
+      opacity: 0.6;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(21, 128, 61, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: rgba(21, 128, 61, 0.24);
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
     }
 
     .feature-list {
@@ -365,23 +1144,62 @@
 
     .feature-list li {
       display: flex;
-      gap: 10px;
-      margin-bottom: 12px;
+      gap: 12px;
+      margin-bottom: 14px;
       align-items: flex-start;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover .feature-list li {
+      transform: translateX(4px);
     }
 
     .feature-list i {
       color: var(--scrap-green);
       margin-top: 3px;
+      font-size: 18px;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(21, 128, 61, 0.1);
+      border-radius: 50%;
+      flex-shrink: 0;
     }
 
     .testimonials {
-      background: #f8fbf9;
+      background: linear-gradient(135deg, #f8fbf9 0%, #f0fdf4 100%);
     }
 
     .testimonial-item {
-      padding: 30px;
+      padding: 32px;
       text-align: left;
+      background: linear-gradient(135deg, #ffffff 0%, #f9fdfb 100%);
+      border: 1px solid rgba(21, 128, 61, 0.12);
+      box-shadow: 0 8px 24px rgba(21, 128, 61, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .testimonial-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #fbbf24, #15803d, #0ea5e9);
+      opacity: 0.6;
+    }
+
+    .testimonial-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(21, 128, 61, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: rgba(21, 128, 61, 0.24);
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
     }
 
     .testimonial-avatar {
@@ -389,45 +1207,175 @@
       height: 92px;
       min-height: 92px;
       border-radius: 50%;
-      padding: 10px;
+      padding: 8px;
       margin-bottom: 18px;
-      box-shadow: none;
+      box-shadow: 0 8px 20px rgba(21, 128, 61, 0.15);
+      border: 2px solid rgba(21, 128, 61, 0.1);
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .testimonial-item:hover .testimonial-avatar {
+      transform: scale(1.08);
+      box-shadow: 0 12px 28px rgba(21, 128, 61, 0.2);
     }
 
     .testimonial-item .stars i {
       color: var(--scrap-orange);
+      font-size: 16px;
+    }
+
+    .testimonial-item p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #64748b;
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+
+    .testimonial-item .name {
+      font-weight: 800;
+      color: var(--scrap-green-dark);
+      font-size: 15px;
+    }
+
+    .post-item {
+      background: linear-gradient(135deg, #ffffff 0%, #f9fdfb 100%);
+      border: 1px solid rgba(21, 128, 61, 0.12);
+      box-shadow: 0 8px 24px rgba(21, 128, 61, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .post-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #0ea5e9, #fbbf24, #15803d);
+      opacity: 0.6;
+    }
+
+    .post-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(21, 128, 61, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: rgba(21, 128, 61, 0.24);
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
     }
 
     .post-item .post-content {
-      padding: 24px;
+      padding: 28px;
     }
 
     .post-date {
       display: inline-block;
-      background: var(--scrap-orange-soft);
-      color: #bb6d00;
-      padding: 8px 14px;
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(251, 191, 36, 0.08));
+      color: #b45309;
+      padding: 8px 16px;
       border-radius: 999px;
       font-weight: 700;
       margin-bottom: 14px;
+      border: 1px solid rgba(251, 191, 36, 0.3);
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .post-item:hover .post-date {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.25), rgba(251, 191, 36, 0.15));
+      border-color: rgba(251, 191, 36, 0.5);
+    }
+
+    .post-item .post-title {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      transition: color 0.3s ease;
+    }
+
+    .post-item:hover .post-title {
+      color: var(--scrap-green);
+    }
+
+    .post-item p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #64748b;
+      margin-bottom: 16px;
     }
 
     .contact-card {
-      padding: 28px;
+      padding: 32px;
       height: 100%;
+      background: linear-gradient(135deg, #ffffff 0%, #f9fdfb 100%);
+      border: 1px solid rgba(21, 128, 61, 0.12);
+      box-shadow: 0 8px 24px rgba(21, 128, 61, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .contact-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #fbbf24, #15803d, #0ea5e9);
+      opacity: 0.6;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(21, 128, 61, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: rgba(21, 128, 61, 0.24);
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
     }
 
     .contact-card .icon {
-      width: 64px;
-      height: 64px;
-      border-radius: 18px;
-      background: var(--scrap-green-soft);
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(21, 128, 61, 0.1), rgba(15, 165, 233, 0.08));
       color: var(--scrap-green);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 26px;
-      margin-bottom: 18px;
+      font-size: 28px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(21, 128, 61, 0.15);
+      box-shadow: 0 4px 12px rgba(21, 128, 61, 0.1);
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .contact-card:hover .icon {
+      background: linear-gradient(135deg, rgba(21, 128, 61, 0.2), rgba(15, 165, 233, 0.15));
+      transform: scale(1.1) rotate(-5deg);
+      box-shadow: 0 8px 20px rgba(21, 128, 61, 0.2);
+    }
+
+    .contact-card h4 {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      transition: color 0.3s ease;
+    }
+
+    .contact-card:hover h4 {
+      color: var(--scrap-green);
+    }
+
+    .contact-card p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #64748b;
     }
 
     .footer {
@@ -467,26 +1415,228 @@
     @media (max-width: 991px) {
       .hero.scrap-hero {
         min-height: auto;
-        padding: 130px 0 60px;
+        padding: 60px 0 50px;
       }
 
       .hero-title {
-        font-size: 40px;
+        font-size: clamp(40px, 9vw, 56px);
+        line-height: 1.12;
+        letter-spacing: -0.9px;
+      }
+
+      .hero-highlights {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero-visual-wrap,
+      .hero-illustration,
+      .hero-banner-slider .swiper-slide,
+      .hero-banner-slider img {
+        min-height: 560px;
+        height: 560px;
+      }
+
+      .service-item,
+      .feature-box,
+      .testimonial-item,
+      .post-item,
+      .contact-card,
+      .portfolio-card,
+      .process-step {
+        padding: 28px 24px;
+      }
+
+      .service-item .icon,
+      .contact-card .icon {
+        width: 72px;
+        height: 72px;
+        font-size: 28px;
+      }
+
+      .service-item h3,
+      .feature-box h4,
+      .testimonial-item .name,
+      .post-item .post-title,
+      .contact-card h4,
+      .portfolio-card h4,
+      .process-step h4 {
+        font-size: 16px;
+      }
+
+      .service-item p,
+      .feature-box p,
+      .testimonial-item p,
+      .post-item p,
+      .contact-card p,
+      .portfolio-card p,
+      .process-step p {
+        font-size: 13px;
+      }
+
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 30px;
+      }
+
+      .hero-description {
+        font-size: 15px;
       }
 
       .hero-highlights {
         grid-template-columns: 1fr;
+        gap: 12px;
       }
 
-      .floating-note {
-        position: static;
-        margin-top: 18px;
+      .hero-visual-wrap,
+      .hero-illustration {
+        min-height: 430px;
+        height: 430px;
+      }
+
+      .hero-visual-wrap {
+        margin-top: 4px;
+      }
+
+      .hero-illustration .swiper-slide,
+      .hero-illustration img {
+        min-height: 350px;
+        height: 350px;
+      }
+
+      .hero-illustration-mask {
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 350px;
+        height: 350px;
+      }
+
+      .hero-illustration-shape::after {
+        top: 50%;
+        right: 50%;
+        width: 370px;
+        height: 260px;
+        box-shadow:
+          0 22px 46px rgba(13, 39, 29, 0.14),
+          -52px -40px 0 -20px rgba(255, 216, 77, 0.18),
+          -80px 60px 0 -28px rgba(255, 255, 255, 0.08),
+          28px 62px 0 -20px rgba(255, 216, 77, 0.12);
+        transform: translate(50%, -50%) rotate(-10deg);
+      }
+
+      .hero-illustration-shape .hero-ornament-1 {
+        top: 12px;
+        right: 8px;
+        width: 142px;
+        height: 142px;
+      }
+
+      .hero-illustration-shape .hero-ornament-2 {
+        bottom: 26px;
+        right: 2px;
+        width: 148px;
+        height: 92px;
+      }
+
+      .hero-illustration-shape .hero-ornament-3 {
+        top: 126px;
+        left: 8px;
+        width: 84px;
+        height: 84px;
+      }
+
+      .hero-illustration .swiper-pagination {
+        right: 50%;
+        bottom: 12px;
+        transform: translateX(50%);
       }
     }
 
     @media (max-width: 575px) {
+      .hero.scrap-hero {
+        padding: 50px 0 40px;
+        min-height: auto;
+      }
+
+      .hero-visual-wrap,
+      .hero-illustration {
+        min-height: 330px;
+        height: 330px;
+      }
+
+      .hero-banner-slider .swiper-slide,
+      .hero-banner-slider img {
+        min-height: 250px;
+        height: 250px;
+      }
+
+      .hero-illustration-mask {
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 285px;
+        height: 285px;
+        border-width: 10px;
+      }
+
+      .hero-illustration-shape::after {
+        top: 50%;
+        right: 50%;
+        width: 305px;
+        height: 210px;
+        border-radius: 30px;
+        transform: translate(50%, -50%) rotate(-12deg);
+      }
+
+      .hero-illustration-shape .hero-ornament-1 {
+        top: 42px;
+        right: 46px;
+        width: 84px;
+        height: 84px;
+        border-radius: 24px;
+      }
+
+      .hero-illustration-shape .hero-ornament-2 {
+        bottom: 46px;
+        right: 26px;
+        width: 96px;
+        height: 58px;
+      }
+
+      .hero-illustration-shape .hero-ornament-3 {
+        top: 98px;
+        left: 34px;
+        width: 54px;
+        height: 54px;
+      }
+
+      .hero-illustration .swiper-pagination {
+        right: 50%;
+        bottom: 8px;
+        transform: translateX(50%);
+        padding: 6px 8px;
+        gap: 6px;
+      }
+
+      .hero-illustration .swiper-pagination-bullet {
+        width: 34px;
+        height: 34px;
+        border-radius: 12px;
+      }
+
+      .hero-illustration .swiper-pagination-bullet::before {
+        width: 10px;
+        height: 10px;
+      }
+
       .hero-title {
-        font-size: 32px;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+        margin-bottom: 16px;
       }
 
       .hero-actions {
@@ -497,33 +1647,438 @@
       .hero-btn-secondary {
         justify-content: center;
       }
+
+      .service-item,
+      .feature-box,
+      .testimonial-item,
+      .post-item,
+      .contact-card,
+      .portfolio-card,
+      .process-step {
+        padding: 24px 20px;
+      }
+
+      .service-item .icon,
+      .contact-card .icon {
+        width: 64px;
+        height: 64px;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      .service-item h3,
+      .feature-box h4,
+      .testimonial-item .name,
+      .post-item .post-title,
+      .contact-card h4,
+      .portfolio-card h4,
+      .process-step h4 {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+
+      .service-item p,
+      .feature-box p,
+      .testimonial-item p,
+      .post-item p,
+      .contact-card p,
+      .portfolio-card p,
+      .process-step p {
+        font-size: 12px;
+        line-height: 1.6;
+      }
+
+      .process-step .number {
+        width: 52px;
+        height: 52px;
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+
+      .testimonial-avatar {
+        width: 80px;
+        height: 80px;
+        min-height: 80px;
+        margin-bottom: 16px;
+      }
+
+      .feature-list li {
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+
+      .feature-list i {
+        font-size: 16px;
+        width: 22px;
+        height: 22px;
+      }
+
+      .post-date {
+        padding: 6px 12px;
+        font-size: 11px;
+      }
+
+      .service-item .readmore,
+      .post-item .readmore,
+      .portfolio-card .readmore {
+        font-size: 13px;
+      }
     }
-   
+
+    #materials {
+      padding-top: 44px !important;
+      padding-bottom: 42px !important;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255, 249, 232, 0.72), rgba(255, 255, 255, 0.96)),
+        radial-gradient(circle at top right, rgba(255, 216, 77, 0.12), transparent 34%);
+    }
+
+    #materials::before {
+      content: "";
+      position: absolute;
+      inset: 10% -10% auto;
+      height: 200px;
+      background: radial-gradient(circle, rgba(255, 216, 77, 0.1), transparent 70%);
+      pointer-events: none;
+    }
+
+    body {
+      background:
+        linear-gradient(180deg, rgba(255, 249, 232, 0.72), rgba(255, 255, 255, 0.96)),
+        radial-gradient(circle at top right, rgba(255, 216, 77, 0.12), transparent 34%);
+    }
+
+    #materials .section-header {
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    #materials .section-header .materials-title {
+      font-size: 38.4px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+      color: var(--scrap-green-dark);
+    }
+
+    #materials .section-header .materials-title:after {
+      background: var(--scrap-orange);
+    }
+
+    #materials .section-header p {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .materials-title {
+      font-size: 62.4px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .materials-card-v2 {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 0 !important;
+      min-height: 360px;
+      width: 100%;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffffff 0%, #fafbf9 100%);
+      border: none;
+      box-shadow:
+        0 2px 8px rgba(22, 39, 28, 0.04),
+        0 8px 24px rgba(22, 39, 28, 0.08),
+        0 16px 40px rgba(22, 39, 28, 0.06);
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      overflow: hidden;
+    }
+
+    .materials-card-v2::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      background: none;
+      opacity: 0;
+    }
+
+    .materials-card-v2::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255, 216, 77, 0.04), transparent 50%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+
+    .materials-card-v2:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow:
+        0 4px 12px rgba(22, 39, 28, 0.08),
+        0 12px 32px rgba(22, 39, 28, 0.12),
+        0 24px 56px rgba(22, 39, 28, 0.1);
+      border-color: rgba(255, 216, 77, 0.24);
+    }
+
+    .materials-card-v2:hover::after {
+      opacity: 1;
+    }
+
+    .materials-card-media {
+      position: relative;
+      overflow: hidden;
+      border-radius: 14px;
+      height: 220px;
+      background: linear-gradient(135deg, #eef7f1 0%, #f0f5f2 100%);
+      flex-shrink: 0;
+    }
+
+    .materials-card-media::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(10, 18, 14, 0.2));
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .materials-card-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .materials-card-v2:hover .materials-card-media img {
+      transform: scale(1.12) rotate(1deg);
+    }
+
+    .materials-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(31, 95, 67, 0.95), rgba(47, 125, 89, 0.95));
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 4px 16px rgba(31, 95, 67, 0.3);
+      z-index: 2;
+      letter-spacing: 0.4px;
+      backdrop-filter: blur(4px);
+    }
+
+    .materials-badge i {
+      color: #ffd84d;
+      font-size: 13px;
+    }
+
+    .materials-card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-width: 0;
+      padding: 4px 0 0;
+      flex-grow: 1;
+    }
+
+    .materials-card-body .card-title {
+      font-size: 20px;
+      line-height: 1.32;
+      margin-bottom: 8px;
+      color: #173326;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .materials-card-body p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #5b6e66;
+      margin-bottom: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .materials-slider-actions {
+      display: none;
+    }
+
+    .materials-pagination {
+      display: none !important;
+    }
+
+    @media (max-width: 991px) {
+      .header-top-item {
+        padding: 6px 10px;
+        min-height: 38px;
+      }
+
+      .header-top-item a,
+      .header-top-item span {
+        font-size: 13px;
+      }
+
+      #materials .section-header h2 {
+        font-size: 26px;
+      }
+
+      .materials-card-v2 {
+        padding: 14px !important;
+        min-height: 340px;
+        width: 100%;
+      }
+
+      .materials-card-media {
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header-top-content {
+        gap: 10px;
+      }
+
+      .header-top-left {
+        gap: 8px;
+      }
+
+      .header-top-item {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      #materials {
+        padding-top: 40px !important;
+        padding-bottom: 38px !important;
+      }
+
+      #materials .section-header {
+        margin-bottom: 20px;
+      }
+
+      #materials .section-header h2 {
+        font-size: 24px;
+      }
+
+      #materials .section-header p {
+        font-size: 13px;
+      }
+
+      .materials-card-v2 {
+        padding: 12px !important;
+        border-radius: 16px;
+        min-height: 320px;
+        max-width: 100%;
+      }
+
+      .materials-card-media {
+        height: 190px;
+        border-radius: 12px;
+      }
+
+      .materials-card-body {
+        padding-right: 2px;
+      }
+
+      .materials-card-body .card-title {
+        font-size: 15px;
+      }
+
+      .materials-card-body p {
+        font-size: 12px;
+      }
+
+      .materials-slider-actions {
+        right: 50%;
+        transform: translateX(50%);
+      }
+
+      .materials-pagination {
+        display: none !important;
+      }
+
+      .materials-badge {
+        top: 8px;
+        left: 8px;
+        padding: 5px 8px;
+        font-size: 9.5px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <header id="header" class="header d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <header id="header" class="header">
+    <div class="container-fluid container-xl">
+      <div class="header-top-content">
+        <div class="header-top-left">
+          <div class="header-top-item">
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:0909123456">Hotline: 0909 123 456</a>
+          </div>
+          <div class="header-top-item">
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:info@phelieuhoangdoanh.com">info@phelieuhoangdoanh.com</a>
+          </div>
+          <div class="header-top-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Phục vụ TP.HCM, Bình Dương, Đồng Nai</span>
+          </div>
+        </div>
+        <div class="header-social">
+          <a href="#" title="Facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="#" title="Zalo" target="_blank"><i class="bi bi-chat-dots"></i></a>
+          <a href="#" title="YouTube" target="_blank"><i class="bi bi-youtube"></i></a>
+          <a href="#" title="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
 
-      <a href="index.html" class="logo d-flex align-items-center">
-  <i class="bi bi-recycle me-2"></i>
-  <h1 class="mb-0">Phế Liệu <span>Hoàng Doanh</span></h1>
-</a>
+      <div class="d-flex align-items-center justify-content-between gap-3">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <i class="bi bi-recycle"></i>
+          <h1 class="mb-0">Phế Liệu <span>Hoàng Doanh</span></h1>
+        </a>
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">Trang chủ</a></li>
-          <li><a href="about.html">Giới thiệu</a></li>
-          <li><a href="services.html">Dịch vụ</a></li>
-          <li><a href="projects.html">Mặt hàng</a></li>
-          <li><a href="blog.html">Tin tức</a></li>
-          <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
-      </nav>
+        <div class="d-flex align-items-center gap-3">
+          <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+          <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a href="index.html" class="active">Trang chủ</a></li>
+              <li><a href="about.html">Giới thiệu</a></li>
+              <li><a href="services.html">Dịch vụ</a></li>
+              <li><a href="projects.html">Mặt hàng</a></li>
+              <li><a href="blog.html">Tin tức</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+          </nav>
+          <a href="#quote-form" class="header-cta d-none d-lg-inline-flex">
+            <i class="bi bi-lightning-charge-fill"></i>
+            Báo giá ngay
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -531,46 +2086,46 @@
     <div class="container position-relative">
       <div class="row align-items-center gy-5">
         <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-          <div class="hero-badge">
-            <i class="bi bi-recycle"></i>
-            Thu mua phế liệu tận nơi - giá cao - thanh toán nhanh
-          </div>
-          <h2 class="hero-title">Chuyên thu mua <span>phế liệu giá cao</span> cho hộ gia đình, kho xưởng và doanh nghiệp</h2>
-          <p class="hero-description">Nhận thu mua sắt thép, đồng, nhôm, inox, giấy carton, nhựa công nghiệp, dây cáp điện, bo mạch, máy móc cũ và hàng thanh lý số lượng nhỏ đến lớn tại TP.HCM và các tỉnh lân cận.</p>
+          <h2 class="hero-title">Chuyên thu mua<br><span>phế liệu giá cao</span><br>cho hộ gia đình, kho xưởng và
+            doanh
+            nghiệp</h2>
 
           <div class="hero-actions">
-            <a href="#quote-form" class="hero-btn-primary"><i class="bi bi-telephone-fill"></i> Nhận báo giá ngay</a>
-            <a href="#materials" class="hero-btn-secondary"><i class="bi bi-arrow-down-circle"></i> Xem mặt hàng thu mua</a>
-          </div>
-
-          <div class="hero-highlights">
-            <div class="item">
-              <strong>30 phút</strong>
-              Phản hồi khảo sát sơ bộ qua điện thoại hoặc Zalo.
-            </div>
-            <div class="item">
-              <strong>24/7</strong>
-              Hỗ trợ tiếp nhận yêu cầu thu mua tận nơi.
-            </div>
-            <div class="item">
-              <strong>Thanh toán ngay</strong>
-              Tiền mặt hoặc chuyển khoản sau khi cân xong.
-            </div>
+            <a href="#quote-form" class="hero-btn-primary"><i class="bi bi-telephone-fill"></i> Nhận báo giá
+              ngay</a>
+            <a href="#materials" class="hero-btn-secondary"><i class="bi bi-arrow-down-circle"></i> Xem mặt hàng thu
+              mua</a>
           </div>
         </div>
 
-        <div class="col-lg-5 position-relative" data-aos="fade-left" data-aos-delay="200">
-          <div class="hero-illustration">
-            <img src="assets/img/about.jpg" 
-                alt="Thu mua phế liệu"
-                class="img-fluid w-100 rounded-4">
+        <div class="col-lg-5" data-aos="fade-left" data-aos-delay="180">
+          <div class="hero-visual-wrap">
+            <div class="hero-illustration">
+              <div class="hero-illustration-shape" aria-hidden="true">
+                <span class="hero-ornament-1"></span>
+                <span class="hero-ornament-2"></span>
+                <span class="hero-ornament-3"></span>
+              </div>
+              <div class="hero-illustration-mask">
+                <div class="slides-1 swiper hero-banner-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/satthep.png" alt="Thu mua sắt thép phế liệu tại kho bãi"
+                        class="img-fluid w-100">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/dongnhom.jpg" alt="Thu mua đồng nhôm và kim loại màu"
+                        class="img-fluid w-100">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/maymoc.jpg" alt="Thu mua máy móc công nghiệp và phế liệu cơ khí"
+                        class="img-fluid w-100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- HOTLINE -->
-          <div class="floating-note mt-3">
-            <strong>Hotline: 0909 686 889</strong>
-            <span class="d-block">Nhận thu mua phế liệu tận nơi toàn khu vực phía Nam</span>
-          </div>
-
         </div>
       </div>
     </div>
@@ -578,102 +2133,94 @@
 
   <main id="main">
 
-    
 
-    <section id="materials" class="constructions py-5">
+
+    <section id="materials" class="services">
       <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Mặt hàng thu mua chính</h2>
-          <p>Chúng tôi thu mua đa dạng chủng loại phế liệu dân dụng và công nghiệp với quy trình khảo sát, phân loại và thanh toán minh bạch.</p>
+        <div class="section-header mb-0">
+          <p class="materials-title">Mặt hàng thu mua chính</p>
+          <p>Chúng tôi thu mua đa dạng chủng loại phế liệu dân dụng và công nghiệp với quy trình khảo sát, phân loại và
+            thanh toán minh bạch.</p>
         </div>
-        <div class="row gy-4">
-          <div class="row">
 
-          <!-- ITEM 1 -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item p-4 h-100">
-              <div class="row align-items-center g-4">
-                <div class="col-xl-5">
-                  <img src="assets/img/satthep.png" 
-                      alt="Sắt thép"
-                      class="img-fluid rounded-4 w-100">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div>
-                    <h4 class="card-title">Sắt thép công trình, khung kèo, xà gồ</h4>
-                    <p class="mb-0">
-                      Nhận thu mua sắt vụn, thép phế, dầm, ống sắt, tôn cũ, vật tư cơ khí và phần kết cấu nhà xưởng tháo dỡ.
-                    </p>
-                  </div>
-                </div>
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6">
+            <div class="card-item h-100 materials-card-v2">
+              <div class="materials-card-media">
+                <img src="assets/img/satthep.png" alt="Sắt thép" class="img-fluid w-100">
+                <span class="materials-badge"><i class="bi bi-building"></i> Công trình</span>
+              </div>
+              <div class="materials-card-body">
+                <h4 class="card-title">Sắt thép công trình</h4>
+                <p class="mb-0">Khung kèo, xà gồ, ống sắt, tôn cũ và kết cấu tháo dỡ.</p>
               </div>
             </div>
           </div>
 
-          <!-- ITEM 2 -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item p-4 h-100">
-              <div class="row align-items-center g-4">
-                <div class="col-xl-5">
-                  <img src="assets/img/dongnhom.jpg" 
-                      alt="Kim loại"
-                      class="img-fluid rounded-4 w-100">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div>
-                    <h4 class="card-title">Đồng, nhôm, inox, chì và kim loại màu</h4>
-                    <p class="mb-0">
-                      Phân loại đúng chủng loại để tối ưu giá trị, đặc biệt với đồng cáp, nhôm thanh, inox 304 và vật tư kim loại màu.
-                    </p>
-                  </div>
-                </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card-item h-100 materials-card-v2">
+              <div class="materials-card-media">
+                <img src="assets/img/dongnhom.jpg" alt="Kim loại" class="img-fluid w-100">
+                <span class="materials-badge"><i class="bi bi-gem"></i> Kim loại màu</span>
+              </div>
+              <div class="materials-card-body">
+                <h4 class="card-title">Đồng, nhôm, inox</h4>
+                <p class="mb-0">Đồng cáp, nhôm thanh, inox 304 và vật tư kim loại màu.</p>
               </div>
             </div>
           </div>
 
-          <!-- ITEM 3 -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item p-4 h-100">
-              <div class="row align-items-center g-4">
-                <div class="col-xl-5">
-                  <img src="assets/img/giaycatton.jpg" 
-                      alt="Giấy nhựa"
-                      class="img-fluid rounded-4 w-100">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div>
-                    <h4 class="card-title">Giấy carton, hồ sơ thanh lý, nhựa công nghiệp</h4>
-                    <p class="mb-0">
-                      Thu mua giấy vụn, thùng carton, pallet giấy, nhựa PP, PE, PET, bao bì, nhựa phế phẩm và hàng tồn kho.
-                    </p>
-                  </div>
-                </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card-item h-100 materials-card-v2">
+              <div class="materials-card-media">
+                <img src="assets/img/giaycatton.jpg" alt="Giấy nhựa" class="img-fluid w-100">
+                <span class="materials-badge"><i class="bi bi-box-seam"></i> Kho hàng</span>
+              </div>
+              <div class="materials-card-body">
+                <h4 class="card-title">Giấy, carton, nhựa</h4>
+                <p class="mb-0">Giấy vụn, carton, nhựa PP, PE, PET và bao bì tồn kho.</p>
               </div>
             </div>
           </div>
 
-          <!-- ITEM 4 -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item p-4 h-100">
-              <div class="row align-items-center g-4">
-                <div class="col-xl-5">
-                  <img src="assets/img/maymoc.jpg" 
-                      alt="Máy móc"
-                      class="img-fluid rounded-4 w-100">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div>
-                    <h4 class="card-title">Máy móc cũ, thiết bị điện tử, dây cáp điện</h4>
-                    <p class="mb-0">
-                      Nhận thu mua máy lạnh, mô tơ, bo mạch, tủ điện, dây cáp đồng, dây chuyền cũ và thiết bị thanh lý từ nhà xưởng.
-                    </p>
-                  </div>
-                </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card-item h-100 materials-card-v2">
+              <div class="materials-card-media">
+                <img src="assets/img/maymoc.jpg" alt="Máy móc" class="img-fluid w-100">
+                <span class="materials-badge"><i class="bi bi-cpu"></i> Thiết bị cũ</span>
+              </div>
+              <div class="materials-card-body">
+                <h4 class="card-title">Máy móc, dây cáp</h4>
+                <p class="mb-0">Máy lạnh, mô tơ, tủ điện, bo mạch và dây cáp điện thanh lý.</p>
               </div>
             </div>
           </div>
 
-</div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card-item h-100 materials-card-v2">
+              <div class="materials-card-media">
+                <img src="assets/img/satthep.png" alt="Phế liệu nhà xưởng" class="img-fluid w-100">
+                <span class="materials-badge"><i class="bi bi-gear-wide-connected"></i> Nhà xưởng</span>
+              </div>
+              <div class="materials-card-body">
+                <h4 class="card-title">Phế liệu nhà xưởng</h4>
+                <p class="mb-0">Thanh lý vật tư cơ khí, dầm thép, khung sắt và hàng tháo dỡ số lượng lớn.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card-item h-100 materials-card-v2">
+              <div class="materials-card-media">
+                <img src="assets/img/services.jpg" alt="Phế liệu dân dụng" class="img-fluid w-100">
+                <span class="materials-badge"><i class="bi bi-house-door-fill"></i> Dân dụng</span>
+              </div>
+              <div class="materials-card-body">
+                <h4 class="card-title">Phế liệu dân dụng</h4>
+                <p class="mb-0">Thu mua đồ cũ gia đình, cửa sắt, đồ inox và vật tư thanh lý tại nhà.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -682,16 +2229,18 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Dịch vụ thu mua phế liệu</h2>
-          <p>Không chỉ thu mua đơn thuần, chúng tôi còn hỗ trợ khảo sát, phân loại, bốc xếp, vận chuyển và thanh lý trọn gói.</p>
+          <p>Không chỉ thu mua đơn thuần, chúng tôi còn hỗ trợ khảo sát, phân loại, bốc xếp, vận chuyển và thanh lý trọn
+            gói.</p>
         </div>
 
-        <div class="row gy-4">
+        <div class="row gy-2">
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon"><i class="fa-solid fa-industry"></i></div>
               <h3>Thu mua kim loại phế liệu</h3>
               <p>Thu mua sắt thép, đồng, nhôm, inox, chì và hợp kim cho công trình, xưởng cơ khí và nhà máy.</p>
-              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -700,7 +2249,8 @@
               <div class="icon"><i class="fa-solid fa-boxes-stacked"></i></div>
               <h3>Thu mua giấy và carton</h3>
               <p>Nhận hàng từ văn phòng, kho vận, cửa hàng và nhà xưởng cần giải phóng giấy vụn hoặc bao bì tồn kho.</p>
-              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -709,7 +2259,8 @@
               <div class="icon"><i class="fa-solid fa-recycle"></i></div>
               <h3>Thu mua nhựa công nghiệp</h3>
               <p>Thu gom nhựa sản xuất, nhựa phế phẩm, pallet nhựa, bao bì nhựa và nhiều loại nhựa tái chế khác.</p>
-              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -718,7 +2269,8 @@
               <div class="icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
               <h3>Bốc xếp và vận chuyển tận nơi</h3>
               <p>Có xe tải, xe nâng và nhân công để xử lý nhanh hàng hóa cồng kềnh, nặng hoặc cần tháo dỡ nhẹ.</p>
-              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -727,7 +2279,8 @@
               <div class="icon"><i class="fa-solid fa-warehouse"></i></div>
               <h3>Dọn kho, thanh lý nhà xưởng</h3>
               <p>Hỗ trợ doanh nghiệp giải phóng mặt bằng, thu gom vật tư cũ, thiết bị hư hỏng và hàng tồn thanh lý.</p>
-              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i class="bi bi-arrow-right"></i></a>
+              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -735,56 +2288,16 @@
             <div class="service-item position-relative">
               <div class="icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
               <h3>Thanh toán nhanh trong ngày</h3>
-              <p>Hoàn tất giao dịch ngay sau khi cân đo, hỗ trợ đối soát rõ ràng cho khách hàng cá nhân và doanh nghiệp.</p>
-              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i class="bi bi-arrow-right"></i></a>
+              <p>Hoàn tất giao dịch ngay sau khi cân đo, hỗ trợ đối soát rõ ràng cho khách hàng cá nhân và doanh nghiệp.
+              </p>
+              <a href="service-details.html" class="readmore stretched-link">Xem chi tiết <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="process" class="py-5">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Quy trình làm việc 4 bước</h2>
-          <p>Đơn giản, nhanh gọn và minh bạch để khách hàng chủ động kiểm soát giá thu mua cũng như tiến độ giải phóng mặt bằng.</p>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="process-step">
-              <div class="number">1</div>
-              <h4>Tiếp nhận yêu cầu</h4>
-              <p>Khách hàng gửi hình ảnh, video hoặc mô tả loại phế liệu, khối lượng và địa điểm thu gom.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="process-step">
-              <div class="number">2</div>
-              <h4>Khảo sát và báo giá</h4>
-              <p>Đội ngũ đến tận nơi kiểm tra hàng, phân loại vật tư và báo giá rõ theo từng nhóm phế liệu.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="process-step">
-              <div class="number">3</div>
-              <h4>Bốc xếp và cân đo</h4>
-              <p>Sử dụng nhân công, xe tải hoặc xe nâng nếu cần; cân đo công khai ngay tại hiện trường.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="process-step">
-              <div class="number">4</div>
-              <h4>Thanh toán và bàn giao</h4>
-              <p>Thanh toán ngay sau khi hoàn tất, hỗ trợ xác nhận khối lượng và dọn gọn khu vực thu gom.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="features" class="features section-bg py-5">
       <div class="container" data-aos="fade-up">
@@ -798,9 +2311,11 @@
             <div class="feature-box h-100">
               <div class="mini-icon"><i class="bi bi-graph-up-arrow"></i></div>
               <h4>Giá thu mua cập nhật theo thị trường</h4>
-              <p>Đơn giá được áp dụng theo từng loại hàng, độ sạch và khối lượng thực tế. Với hàng số lượng lớn, chúng tôi báo giá trực tiếp tại hiện trường.</p>
+              <p>Đơn giá được áp dụng theo từng loại hàng, độ sạch và khối lượng thực tế. Với hàng số lượng lớn, chúng
+                tôi báo giá trực tiếp tại hiện trường.</p>
               <ul class="feature-list">
-                <li><i class="bi bi-check2-circle"></i><span>Phân loại sắt, đồng, nhôm, inox, giấy, nhựa riêng biệt.</span></li>
+                <li><i class="bi bi-check2-circle"></i><span>Phân loại sắt, đồng, nhôm, inox, giấy, nhựa riêng
+                    biệt.</span></li>
                 <li><i class="bi bi-check2-circle"></i><span>Không gộp hàng sai chủng loại gây giảm giá trị.</span></li>
                 <li><i class="bi bi-check2-circle"></i><span>Báo giá minh bạch trước khi thu gom.</span></li>
               </ul>
@@ -811,9 +2326,11 @@
             <div class="feature-box h-100">
               <div class="mini-icon"><i class="bi bi-building-check"></i></div>
               <h4>Phục vụ từ hộ gia đình đến doanh nghiệp</h4>
-              <p>Chúng tôi có thể xử lý đơn hàng nhỏ lẻ tại nhà dân hoặc lô hàng lớn cần nhiều nhân công, phương tiện và đối soát cho doanh nghiệp.</p>
+              <p>Chúng tôi có thể xử lý đơn hàng nhỏ lẻ tại nhà dân hoặc lô hàng lớn cần nhiều nhân công, phương tiện và
+                đối soát cho doanh nghiệp.</p>
               <ul class="feature-list">
-                <li><i class="bi bi-check2-circle"></i><span>Thu mua tận nơi tại TP.HCM, Bình Dương, Đồng Nai.</span></li>
+                <li><i class="bi bi-check2-circle"></i><span>Thu mua tận nơi tại TP.HCM, Bình Dương, Đồng Nai.</span>
+                </li>
                 <li><i class="bi bi-check2-circle"></i><span>Có lịch thu gom định kỳ cho nhà máy và kho vận.</span></li>
                 <li><i class="bi bi-check2-circle"></i><span>Hỗ trợ tháo dỡ nhẹ và dọn kho thanh lý.</span></li>
               </ul>
@@ -824,10 +2341,12 @@
             <div class="feature-box h-100">
               <div class="mini-icon"><i class="bi bi-rulers"></i></div>
               <h4>Cân đo chuẩn xác - thanh toán nhanh</h4>
-              <p>Mỗi giao dịch đều được thực hiện công khai, giúp khách hàng dễ dàng kiểm tra khối lượng và tổng giá trị thu mua.</p>
+              <p>Mỗi giao dịch đều được thực hiện công khai, giúp khách hàng dễ dàng kiểm tra khối lượng và tổng giá trị
+                thu mua.</p>
               <ul class="feature-list">
                 <li><i class="bi bi-check2-circle"></i><span>Cân đo công khai tại chỗ.</span></li>
-                <li><i class="bi bi-check2-circle"></i><span>Tiền mặt hoặc chuyển khoản ngay sau khi xong việc.</span></li>
+                <li><i class="bi bi-check2-circle"></i><span>Tiền mặt hoặc chuyển khoản ngay sau khi xong việc.</span>
+                </li>
                 <li><i class="bi bi-check2-circle"></i><span>Có thể hỗ trợ xác nhận khối lượng theo nhu cầu.</span></li>
               </ul>
             </div>
@@ -837,10 +2356,12 @@
             <div class="feature-box h-100">
               <div class="mini-icon"><i class="bi bi-shield-check"></i></div>
               <h4>Làm việc gọn gàng và chuyên nghiệp</h4>
-              <p>Không chỉ thu mua, chúng tôi còn chú trọng đến tiến độ, an toàn bốc xếp và hiện trạng mặt bằng sau khi hoàn tất.</p>
+              <p>Không chỉ thu mua, chúng tôi còn chú trọng đến tiến độ, an toàn bốc xếp và hiện trạng mặt bằng sau khi
+                hoàn tất.</p>
               <ul class="feature-list">
                 <li><i class="bi bi-check2-circle"></i><span>Đội xe, nhân công, dụng cụ bốc xếp sẵn sàng.</span></li>
-                <li><i class="bi bi-check2-circle"></i><span>Phối hợp nhanh với kho, bảo vệ và bộ phận vận hành.</span></li>
+                <li><i class="bi bi-check2-circle"></i><span>Phối hợp nhanh với kho, bảo vệ và bộ phận vận hành.</span>
+                </li>
                 <li><i class="bi bi-check2-circle"></i><span>Bàn giao khu vực thu gom sạch sẽ, đúng hẹn.</span></li>
               </ul>
             </div>
@@ -860,7 +2381,14 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="portfolio-card">
               <div class="portfolio-visual">
-                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="220" height="150" rx="24" fill="#1f5f43" /><rect x="28" y="82" width="86" height="42" rx="10" fill="#2b7a57" /><rect x="112" y="90" width="42" height="34" rx="10" fill="#f39c12" /><circle cx="65" cy="128" r="14" fill="#172129" /><circle cx="132" cy="128" r="14" fill="#172129" /><text x="24" y="52" fill="#fff" font-size="20" font-weight="700" font-family="Arial">SẮT THÉP</text></svg>
+                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="220" height="150" rx="24" fill="#1f5f43" />
+                  <rect x="28" y="82" width="86" height="42" rx="10" fill="#2b7a57" />
+                  <rect x="112" y="90" width="42" height="34" rx="10" fill="#f39c12" />
+                  <circle cx="65" cy="128" r="14" fill="#172129" />
+                  <circle cx="132" cy="128" r="14" fill="#172129" /><text x="24" y="52" fill="#fff" font-size="20"
+                    font-weight="700" font-family="Arial">SẮT THÉP</text>
+                </svg>
               </div>
               <div class="content">
                 <h4>Sắt thép công trình</h4>
@@ -873,7 +2401,16 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="150">
             <div class="portfolio-card">
               <div class="portfolio-visual">
-                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="220" height="150" rx="24" fill="#17354a" /><path d="M120 28 C142 28 158 44 158 69 L158 102 C158 124 142 140 120 140 C98 140 82 124 82 102 L82 69 C82 44 98 28 120 28 Z" fill="#f39c12" /><path d="M100 67 L100 100 C100 112 108 123 120 123 C132 123 140 112 140 100 L140 67" fill="#10222f" /><rect x="76" y="95" width="26" height="36" rx="8" fill="#fff" /><rect x="138" y="95" width="26" height="36" rx="8" fill="#ffe3bb" /><text x="20" y="42" fill="#fff" font-size="18" font-weight="700" font-family="Arial">ĐỒNG NHÔM INOX</text></svg>
+                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="220" height="150" rx="24" fill="#17354a" />
+                  <path
+                    d="M120 28 C142 28 158 44 158 69 L158 102 C158 124 142 140 120 140 C98 140 82 124 82 102 L82 69 C82 44 98 28 120 28 Z"
+                    fill="#f39c12" />
+                  <path d="M100 67 L100 100 C100 112 108 123 120 123 C132 123 140 112 140 100 L140 67" fill="#10222f" />
+                  <rect x="76" y="95" width="26" height="36" rx="8" fill="#fff" />
+                  <rect x="138" y="95" width="26" height="36" rx="8" fill="#ffe3bb" /><text x="20" y="42" fill="#fff"
+                    font-size="18" font-weight="700" font-family="Arial">ĐỒNG NHÔM INOX</text>
+                </svg>
               </div>
               <div class="content">
                 <h4>Kim loại màu</h4>
@@ -886,7 +2423,13 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="portfolio-card">
               <div class="portfolio-visual">
-                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="220" height="150" rx="24" fill="#205e43" /><rect x="34" y="76" width="64" height="44" rx="10" fill="#d9f2e4" /><rect x="72" y="46" width="64" height="44" rx="10" fill="#f4c77a" /><rect x="110" y="16" width="64" height="44" rx="10" fill="#fff" opacity="0.88" /><text x="20" y="132" fill="#fff" font-size="18" font-weight="700" font-family="Arial">GIẤY - CARTON</text></svg>
+                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="220" height="150" rx="24" fill="#205e43" />
+                  <rect x="34" y="76" width="64" height="44" rx="10" fill="#d9f2e4" />
+                  <rect x="72" y="46" width="64" height="44" rx="10" fill="#f4c77a" />
+                  <rect x="110" y="16" width="64" height="44" rx="10" fill="#fff" opacity="0.88" /><text x="20" y="132"
+                    fill="#fff" font-size="18" font-weight="700" font-family="Arial">GIẤY - CARTON</text>
+                </svg>
               </div>
               <div class="content">
                 <h4>Giấy, carton, hồ sơ cũ</h4>
@@ -899,7 +2442,13 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="250">
             <div class="portfolio-card">
               <div class="portfolio-visual">
-                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="220" height="150" rx="24" fill="#1b4d35" /><circle cx="80" cy="72" r="34" fill="#f39c12" /><path d="M80 52 L96 72 L80 92 L64 72 Z" fill="#fff" opacity="0.85" /><rect x="120" y="45" width="52" height="60" rx="14" fill="#d9f2e4" /><text x="22" y="132" fill="#fff" font-size="18" font-weight="700" font-family="Arial">NHỰA CÔNG NGHIỆP</text></svg>
+                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="220" height="150" rx="24" fill="#1b4d35" />
+                  <circle cx="80" cy="72" r="34" fill="#f39c12" />
+                  <path d="M80 52 L96 72 L80 92 L64 72 Z" fill="#fff" opacity="0.85" />
+                  <rect x="120" y="45" width="52" height="60" rx="14" fill="#d9f2e4" /><text x="22" y="132" fill="#fff"
+                    font-size="18" font-weight="700" font-family="Arial">NHỰA CÔNG NGHIỆP</text>
+                </svg>
               </div>
               <div class="content">
                 <h4>Nhựa công nghiệp</h4>
@@ -912,7 +2461,13 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="portfolio-card">
               <div class="portfolio-visual">
-                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="220" height="150" rx="24" fill="#20343f" /><rect x="25" y="28" width="105" height="66" rx="14" fill="#2b7a57" /><rect x="36" y="39" width="83" height="44" rx="10" fill="#0d1c24" /><rect x="148" y="42" width="38" height="72" rx="10" fill="#f39c12" /><text x="24" y="132" fill="#fff" font-size="18" font-weight="700" font-family="Arial">BO MẠCH - DÂY CÁP</text></svg>
+                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="220" height="150" rx="24" fill="#20343f" />
+                  <rect x="25" y="28" width="105" height="66" rx="14" fill="#2b7a57" />
+                  <rect x="36" y="39" width="83" height="44" rx="10" fill="#0d1c24" />
+                  <rect x="148" y="42" width="38" height="72" rx="10" fill="#f39c12" /><text x="24" y="132" fill="#fff"
+                    font-size="18" font-weight="700" font-family="Arial">BO MẠCH - DÂY CÁP</text>
+                </svg>
               </div>
               <div class="content">
                 <h4>Thiết bị điện tử cũ</h4>
@@ -925,7 +2480,14 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="350">
             <div class="portfolio-card">
               <div class="portfolio-visual">
-                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="220" height="150" rx="24" fill="#1a452f" /><rect x="20" y="86" width="150" height="42" rx="12" fill="#2b7a57" /><rect x="44" y="32" width="26" height="54" rx="8" fill="#f39c12" /><rect x="86" y="52" width="26" height="34" rx="8" fill="#f39c12" /><rect x="128" y="22" width="26" height="64" rx="8" fill="#f39c12" /><text x="24" y="138" fill="#fff" font-size="16" font-weight="700" font-family="Arial">MÁY MÓC THANH LÝ</text></svg>
+                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="220" height="150" rx="24" fill="#1a452f" />
+                  <rect x="20" y="86" width="150" height="42" rx="12" fill="#2b7a57" />
+                  <rect x="44" y="32" width="26" height="54" rx="8" fill="#f39c12" />
+                  <rect x="86" y="52" width="26" height="34" rx="8" fill="#f39c12" />
+                  <rect x="128" y="22" width="26" height="64" rx="8" fill="#f39c12" /><text x="24" y="138" fill="#fff"
+                    font-size="16" font-weight="700" font-family="Arial">MÁY MÓC THANH LÝ</text>
+                </svg>
               </div>
               <div class="content">
                 <h4>Máy móc cũ</h4>
@@ -938,11 +2500,20 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="portfolio-card">
               <div class="portfolio-visual">
-                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="220" height="150" rx="24" fill="#17354a" /><rect x="28" y="92" width="108" height="30" rx="12" fill="#f39c12" /><rect x="86" y="22" width="28" height="70" rx="10" fill="#2b7a57" /><rect x="40" y="52" width="120" height="12" rx="6" fill="#d9f2e4" /><path d="M58 64 L44 98 H86 Z" fill="#fff" opacity="0.9" /><path d="M142 64 L128 98 H170 Z" fill="#fff" opacity="0.9" /><text x="22" y="138" fill="#fff" font-size="18" font-weight="700" font-family="Arial">CÂN ĐO TẠI CHỖ</text></svg>
+                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="220" height="150" rx="24" fill="#17354a" />
+                  <rect x="28" y="92" width="108" height="30" rx="12" fill="#f39c12" />
+                  <rect x="86" y="22" width="28" height="70" rx="10" fill="#2b7a57" />
+                  <rect x="40" y="52" width="120" height="12" rx="6" fill="#d9f2e4" />
+                  <path d="M58 64 L44 98 H86 Z" fill="#fff" opacity="0.9" />
+                  <path d="M142 64 L128 98 H170 Z" fill="#fff" opacity="0.9" /><text x="22" y="138" fill="#fff"
+                    font-size="18" font-weight="700" font-family="Arial">CÂN ĐO TẠI CHỖ</text>
+                </svg>
               </div>
               <div class="content">
                 <h4>Cân đo và đối soát</h4>
-                <p>Hỗ trợ kiểm tra khối lượng minh bạch, phù hợp cho khách hàng cần giao dịch rõ ràng và nhanh chóng.</p>
+                <p>Hỗ trợ kiểm tra khối lượng minh bạch, phù hợp cho khách hàng cần giao dịch rõ ràng và nhanh chóng.
+                </p>
                 <a href="projects.html" class="readmore">Xem thêm <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
@@ -951,7 +2522,14 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="450">
             <div class="portfolio-card">
               <div class="portfolio-visual">
-                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="220" height="150" rx="24" fill="#20343f" /><rect x="22" y="82" width="95" height="42" rx="12" fill="#2b7a57" /><rect x="116" y="92" width="48" height="32" rx="10" fill="#f39c12" /><circle cx="58" cy="128" r="14" fill="#172129" /><circle cx="138" cy="128" r="14" fill="#172129" /><text x="24" y="50" fill="#fff" font-size="18" font-weight="700" font-family="Arial">XE TẢI - NHÂN CÔNG</text></svg>
+                <svg viewBox="0 0 220 150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="220" height="150" rx="24" fill="#20343f" />
+                  <rect x="22" y="82" width="95" height="42" rx="12" fill="#2b7a57" />
+                  <rect x="116" y="92" width="48" height="32" rx="10" fill="#f39c12" />
+                  <circle cx="58" cy="128" r="14" fill="#172129" />
+                  <circle cx="138" cy="128" r="14" fill="#172129" /><text x="24" y="50" fill="#fff" font-size="18"
+                    font-weight="700" font-family="Arial">XE TẢI - NHÂN CÔNG</text>
+                </svg>
               </div>
               <div class="content">
                 <h4>Thu gom tận nơi</h4>
@@ -968,7 +2546,8 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Khách hàng đánh giá</h2>
-          <p>Nhiều doanh nghiệp và hộ kinh doanh lựa chọn chúng tôi vì giá thu mua rõ ràng, xử lý nhanh và làm việc đúng hẹn.</p>
+          <p>Nhiều doanh nghiệp và hộ kinh doanh lựa chọn chúng tôi vì giá thu mua rõ ràng, xử lý nhanh và làm việc đúng
+            hẹn.</p>
         </div>
 
         <div class="slides-2 swiper">
@@ -976,42 +2555,63 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="testimonial-avatar">
-                  <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50" fill="#2b7a57" /><circle cx="50" cy="38" r="18" fill="#f2d0b2" /><path d="M22 84 C28 64 42 56 50 56 C58 56 72 64 78 84" fill="#f39c12" /></svg>
+                  <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="50" fill="#2b7a57" />
+                    <circle cx="50" cy="38" r="18" fill="#f2d0b2" />
+                    <path d="M22 84 C28 64 42 56 50 56 C58 56 72 64 78 84" fill="#f39c12" />
+                  </svg>
                 </div>
                 <h3>Công ty Cơ Khí Minh Long</h3>
                 <h4>Thu mua sắt thép và máy móc cũ</h4>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <p><i class="bi bi-quote quote-icon-left"></i>Đội khảo sát đến nhanh, báo giá chi tiết cho từng loại hàng và thanh toán ngay sau khi cân xong. Quy trình rất chuyên nghiệp.<i class="bi bi-quote quote-icon-right"></i></p>
+                <p><i class="bi bi-quote quote-icon-left"></i>Đội khảo sát đến nhanh, báo giá chi tiết cho từng loại
+                  hàng và thanh toán ngay sau khi cân xong. Quy trình rất chuyên nghiệp.<i
+                    class="bi bi-quote quote-icon-right"></i></p>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="testimonial-avatar">
-                  <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50" fill="#1f5f43" /><circle cx="50" cy="38" r="18" fill="#f2d0b2" /><path d="M22 84 C28 64 42 56 50 56 C58 56 72 64 78 84" fill="#d9f2e4" /></svg>
+                  <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="50" fill="#1f5f43" />
+                    <circle cx="50" cy="38" r="18" fill="#f2d0b2" />
+                    <path d="M22 84 C28 64 42 56 50 56 C58 56 72 64 78 84" fill="#d9f2e4" />
+                  </svg>
                 </div>
                 <h3>Xưởng In Bao Bì An Phát</h3>
                 <h4>Thu mua giấy carton và nhựa tồn kho</h4>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <p><i class="bi bi-quote quote-icon-left"></i>Giá thu mua tốt, có xe tải và nhân công bốc xếp nên chúng tôi không phải thuê thêm người ngoài, rất tiết kiệm thời gian.<i class="bi bi-quote quote-icon-right"></i></p>
+                <p><i class="bi bi-quote quote-icon-left"></i>Giá thu mua tốt, có xe tải và nhân công bốc xếp nên chúng
+                  tôi không phải thuê thêm người ngoài, rất tiết kiệm thời gian.<i
+                    class="bi bi-quote quote-icon-right"></i></p>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="testimonial-avatar">
-                  <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50" fill="#20343f" /><circle cx="50" cy="38" r="18" fill="#f2d0b2" /><path d="M22 84 C28 64 42 56 50 56 C58 56 72 64 78 84" fill="#f39c12" /></svg>
+                  <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="50" fill="#20343f" />
+                    <circle cx="50" cy="38" r="18" fill="#f2d0b2" />
+                    <path d="M22 84 C28 64 42 56 50 56 C58 56 72 64 78 84" fill="#f39c12" />
+                  </svg>
                 </div>
                 <h3>Kho Vận Tân Thành</h3>
                 <h4>Dọn kho và thanh lý hàng cũ</h4>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <p><i class="bi bi-quote quote-icon-left"></i>Làm việc đúng giờ, thu gom sạch sẽ, đối soát nhanh. Rất phù hợp khi cần giải phóng kho gấp hoặc thanh lý định kỳ.<i class="bi bi-quote quote-icon-right"></i></p>
+                <p><i class="bi bi-quote quote-icon-left"></i>Làm việc đúng giờ, thu gom sạch sẽ, đối soát nhanh. Rất
+                  phù hợp khi cần giải phóng kho gấp hoặc thanh lý định kỳ.<i class="bi bi-quote quote-icon-right"></i>
+                </p>
               </div>
             </div>
           </div>
@@ -1031,13 +2631,20 @@
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="post-item position-relative h-100">
               <div class="blog-visual">
-                <svg viewBox="0 0 260 180" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="260" height="180" rx="24" fill="#1f5f43" /><rect x="28" y="118" width="200" height="14" rx="7" fill="#fff" opacity="0.26" /><rect x="28" y="92" width="165" height="14" rx="7" fill="#fff" opacity="0.26" /><circle cx="206" cy="62" r="28" fill="#f39c12" /><text x="28" y="58" fill="#fff" font-size="24" font-weight="700" font-family="Arial">BẢNG GIÁ</text></svg>
+                <svg viewBox="0 0 260 180" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="260" height="180" rx="24" fill="#1f5f43" />
+                  <rect x="28" y="118" width="200" height="14" rx="7" fill="#fff" opacity="0.26" />
+                  <rect x="28" y="92" width="165" height="14" rx="7" fill="#fff" opacity="0.26" />
+                  <circle cx="206" cy="62" r="28" fill="#f39c12" /><text x="28" y="58" fill="#fff" font-size="24"
+                    font-weight="700" font-family="Arial">BẢNG GIÁ</text>
+                </svg>
               </div>
               <div class="post-content d-flex flex-column">
                 <span class="post-date">Tháng 3</span>
                 <h3 class="post-title">Bảng giá thu mua sắt, đồng, nhôm, inox cập nhật theo thị trường</h3>
                 <p>Gợi ý cách theo dõi giá phế liệu theo ngày và thời điểm bán phù hợp để tối ưu giá trị lô hàng.</p>
-                <a href="blog-details.html" class="readmore stretched-link"><span>Xem bài viết</span><i class="bi bi-arrow-right"></i></a>
+                <a href="blog-details.html" class="readmore stretched-link"><span>Xem bài viết</span><i
+                    class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -1045,13 +2652,20 @@
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="post-item position-relative h-100">
               <div class="blog-visual">
-                <svg viewBox="0 0 260 180" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="260" height="180" rx="24" fill="#20343f" /><circle cx="88" cy="90" r="40" fill="#f39c12" /><path d="M88 66 L102 90 L88 114 L74 90 Z" fill="#fff" opacity="0.88" /><text x="134" y="86" fill="#fff" font-size="20" font-weight="700" font-family="Arial">PHÂN LOẠI</text><text x="134" y="114" fill="#d9f2e4" font-size="16" font-family="Arial">BÁN GIÁ CAO HƠN</text></svg>
+                <svg viewBox="0 0 260 180" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="260" height="180" rx="24" fill="#20343f" />
+                  <circle cx="88" cy="90" r="40" fill="#f39c12" />
+                  <path d="M88 66 L102 90 L88 114 L74 90 Z" fill="#fff" opacity="0.88" /><text x="134" y="86"
+                    fill="#fff" font-size="20" font-weight="700" font-family="Arial">PHÂN LOẠI</text><text x="134"
+                    y="114" fill="#d9f2e4" font-size="16" font-family="Arial">BÁN GIÁ CAO HƠN</text>
+                </svg>
               </div>
               <div class="post-content d-flex flex-column">
                 <span class="post-date">Tháng 3</span>
                 <h3 class="post-title">5 cách phân loại phế liệu tại kho để bán được giá tốt hơn</h3>
                 <p>Cách tách riêng kim loại màu, kim loại đen, giấy và nhựa để giảm hao hụt giá trị khi thanh lý.</p>
-                <a href="blog-details.html" class="readmore stretched-link"><span>Xem bài viết</span><i class="bi bi-arrow-right"></i></a>
+                <a href="blog-details.html" class="readmore stretched-link"><span>Xem bài viết</span><i
+                    class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -1059,13 +2673,20 @@
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="post-item position-relative h-100">
               <div class="blog-visual">
-                <svg viewBox="0 0 260 180" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect width="260" height="180" rx="24" fill="#1d4d37" /><rect x="32" y="96" width="64" height="42" rx="10" fill="#d9f2e4" /><rect x="74" y="60" width="64" height="42" rx="10" fill="#f4c77a" /><rect x="118" y="28" width="64" height="42" rx="10" fill="#fff" opacity="0.9" /><text x="34" y="158" fill="#fff" font-size="18" font-weight="700" font-family="Arial">LƯU KHO AN TOÀN</text></svg>
+                <svg viewBox="0 0 260 180" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="260" height="180" rx="24" fill="#1d4d37" />
+                  <rect x="32" y="96" width="64" height="42" rx="10" fill="#d9f2e4" />
+                  <rect x="74" y="60" width="64" height="42" rx="10" fill="#f4c77a" />
+                  <rect x="118" y="28" width="64" height="42" rx="10" fill="#fff" opacity="0.9" /><text x="34" y="158"
+                    fill="#fff" font-size="18" font-weight="700" font-family="Arial">LƯU KHO AN TOÀN</text>
+                </svg>
               </div>
               <div class="post-content d-flex flex-column">
                 <span class="post-date">Tháng 3</span>
                 <h3 class="post-title">Lưu ý an toàn khi lưu kho giấy, nhựa và thiết bị điện tử cũ</h3>
                 <p>Những điểm cần chú ý để hạn chế ẩm mốc, cháy nổ và thất thoát giá trị trước khi bán phế liệu.</p>
-                <a href="blog-details.html" class="readmore stretched-link"><span>Xem bài viết</span><i class="bi bi-arrow-right"></i></a>
+                <a href="blog-details.html" class="readmore stretched-link"><span>Xem bài viết</span><i
+                    class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -1195,7 +2816,8 @@
     </div>
   </footer>
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 

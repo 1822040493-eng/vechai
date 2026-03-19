@@ -70,11 +70,11 @@ section {
 
 .section-header {
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .section-header h2 {
-  font-size: 32px;
+  font-size: 38.4px;
   font-weight: 700;
   position: relative;
   color: #2e3135;
@@ -99,6 +99,7 @@ section {
 
 .section-header p {
   margin: 0 auto 0 auto;
+  font-size: 16px;
 }
 
 @media (min-width: 1199px) {
